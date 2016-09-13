@@ -20,18 +20,10 @@ public class ArrayIntList extends da1031.AbstractIntCollection implements da1031
         if(index > size){
             throw new IndexOutOfBoundsException("addAt() -- Cant add when the index is bigger then the listsize");
         }
-        //Create new int[]?
-        /*int[] results = new int[values.length];
-        //Loop up to the index
-        for (int i = 0; i < index; i++){
-            results[i] = values[i];
-        }
-        results[index] = n;
-        for (int i = index; i < values.length; i++){
-            values[i] = values[i - 1];
-        }
-        values[] = results[];*/
-        for (int i = index; i < values.length; i++){
+        //Adding the last value to the list
+        add(values[size()]);
+        //Taking the value of the list and replaces the value from the list with one less index
+        for (int i = size(); i > index; i--){
             values[i] = values[i - 1];
         }
         values[index] = n;
@@ -40,27 +32,30 @@ public class ArrayIntList extends da1031.AbstractIntCollection implements da1031
     @Override
     public void remove(int index) throws IndexOutOfBoundsException {
         if(index > size){
-            throw new IndexOutOfBoundsException("addAt() -- Cant add when the index is bigger then the listsize");
+            throw new IndexOutOfBoundsException("remove() -- Cant remove when the index is bigger then the listsize");
         }
 
+        for (int i = index; i < size(); i++){
+            values[i] = values[i + 1];
+        }
+        size--;
     }
 
     @Override
     public int get(int index) throws IndexOutOfBoundsException {
-        return 0;
+        if(index > size){
+            throw new IndexOutOfBoundsException("remove() -- Cant remove when the index is bigger then the listsize");
+        }
+        return values[index];
     }
 
     @Override
     public int indexOf(int n) {
-        return 0;
-    }
-
-    /*@Override
-    public String toString() {
-        String s = "{";
-        for (int nr : values) {
-            s += nr+" ";
+        int ret = -1;
+        for(int i = 0; i < size(); i++){
+            if(values[i] == n)
+                ret = i;
         }
-        return s+"}";
-    }*/
+        return ret;
+    }
 }
