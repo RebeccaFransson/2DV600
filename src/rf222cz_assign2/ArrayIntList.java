@@ -17,7 +17,7 @@ public class ArrayIntList extends da1031.AbstractIntCollection implements da1031
 
     @Override
     public void addAt(int n, int index) throws IndexOutOfBoundsException {
-        if(index > size){
+        if(!checkIndex(index, size())){
             throw new IndexOutOfBoundsException("addAt() -- Cant add when the index is bigger then the listsize");
         }
         //Adding the last value to the list
@@ -31,10 +31,9 @@ public class ArrayIntList extends da1031.AbstractIntCollection implements da1031
 
     @Override
     public void remove(int index) throws IndexOutOfBoundsException {
-        if(index > size){
+        if(!checkIndex(index, size())){
             throw new IndexOutOfBoundsException("remove() -- Cant remove when the index is bigger then the listsize");
         }
-
         for (int i = index; i < size(); i++){
             values[i] = values[i + 1];
         }
@@ -43,8 +42,8 @@ public class ArrayIntList extends da1031.AbstractIntCollection implements da1031
 
     @Override
     public int get(int index) throws IndexOutOfBoundsException {
-        if(index > size){
-            throw new IndexOutOfBoundsException("remove() -- Cant remove when the index is bigger then the listsize");
+        if(!checkIndex(index, size())){
+            throw new IndexOutOfBoundsException("get() -- Cant get when the index is bigger then the listsize");
         }
         return values[index];
     }

@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="256597b3-9d23-4f43-bd1a-8bce616840b4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/rf222cz_assign2/TheoreticalQuestions.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign2/ArrayIntList.class" afterPath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign2/ArrayIntList.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign2/CollectionMain.class" afterPath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign2/CollectionMain.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rf222cz_assign2/ArrayIntList.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign2/ArrayIntList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rf222cz_assign2/CollectionMain.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign2/CollectionMain.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rf222cz_assign2/ArrayIntStack.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign2/ArrayIntStack.java" />
     </list>
     <ignored path="2DV600.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,11 +26,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.45714286">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="ArrayIntList.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="ArrayIntList.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/ArrayIntList.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="901">
-                  <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+                <state relative-caret-position="89">
+                  <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
                   <folding />
                 </state>
               </provider>
@@ -43,18 +39,18 @@
           <file leaf-file-name="CollectionMain.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/CollectionMain.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="391">
-                  <caret line="61" column="42" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
+                <state relative-caret-position="335">
+                  <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ArrayIntStack.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="ArrayIntStack.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/ArrayIntStack.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+                <state relative-caret-position="460">
+                  <caret line="34" column="73" selection-start-line="34" selection-start-column="73" selection-end-line="34" selection-end-column="73" />
                   <folding />
                 </state>
               </provider>
@@ -64,7 +60,7 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="IntStack.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="IntStack.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/da1031/IntStack.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="170">
@@ -74,11 +70,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="AbstractIntCollection.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="AbstractIntCollection.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/da1031/AbstractIntCollection.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="284">
-                  <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+                <state relative-caret-position="171">
+                  <caret line="49" column="34" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
                   <folding />
                 </state>
               </provider>
@@ -144,9 +140,9 @@
         <option value="$PROJECT_DIR$/src/rf222cz_assign1/Arrays.java" />
         <option value="$PROJECT_DIR$/src/rf222cz_assign1/Queue/QueueMain.java" />
         <option value="$PROJECT_DIR$/src/rf222cz_assign1/Queue/Queue.java" />
-        <option value="$PROJECT_DIR$/src/rf222cz_assign2/ArrayIntList.java" />
-        <option value="$PROJECT_DIR$/src/rf222cz_assign2/ArrayIntStack.java" />
         <option value="$PROJECT_DIR$/src/rf222cz_assign2/CollectionMain.java" />
+        <option value="$PROJECT_DIR$/src/rf222cz_assign2/ArrayIntStack.java" />
+        <option value="$PROJECT_DIR$/src/rf222cz_assign2/ArrayIntList.java" />
       </list>
     </option>
   </component>
@@ -654,7 +650,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34606987" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34606987" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -698,11 +694,17 @@
           <properties />
           <option name="timeStamp" value="79" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/rf222cz_assign2/CollectionMain.java</url>
+          <line>44</line>
+          <properties />
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="82" />
+      <option name="time" value="83" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1022,34 +1024,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/da1031/AbstractIntCollection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/da1031/IntList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="37" column="26" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/io/PrintStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="804" column="0" selection-start-line="804" selection-start-column="0" selection-end-line="804" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/da1031/IntStack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -1062,26 +1040,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/ArrayIntList.java">
+    <entry file="file://$PROJECT_DIR$/src/da1031/IntList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+        <state relative-caret-position="510">
+          <caret line="37" column="26" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/da1031/IntStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/CollectionMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="61" column="42" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
+        <state relative-caret-position="335">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/da1031/AbstractIntCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="49" column="34" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/ArrayIntStack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="460">
+          <caret line="34" column="73" selection-start-line="34" selection-start-column="73" selection-end-line="34" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/ArrayIntList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
           <folding />
         </state>
       </provider>
