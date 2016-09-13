@@ -6,8 +6,8 @@ import java.io.IOException;
  * Created by ymafr on 2016-09-07.
  */
 public class Point {
-    public int x;
-    public int y;
+    private int x;
+    private int y;
 
     //Default constructor
     public Point(){

@@ -32,8 +32,7 @@ public class Deck {
     }
     //Return the next card and removes it from the list
     public Card handsOutNextCard(){
-        Card nextCard = cards.get(0);
-        cards.remove(0);
+        Card nextCard = cards.remove(0);
         cardsDealt.add(nextCard);
         return nextCard;
     }

@@ -1,4 +1,4 @@
-package rf222cz_assign2;
+package rf222cz_assign2.Exercise1_Collection;
 
 /**
  * Created by ymafr on 2016-09-13.
