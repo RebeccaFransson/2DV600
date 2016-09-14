@@ -44,7 +44,6 @@ public class Ferry implements FerryInterface {
 
     @Override
     public void embark(Vehicle v) {
-
         //Check if there is enough space on ferry or the vehicle is already on the ferry
         if(!hasSpaceFor(v)) {
             System.err.println("Cant embark vehicle because of lack of space or room for the passengers, or the vehicle is already on the ferry");
@@ -108,8 +107,9 @@ public class Ferry implements FerryInterface {
     @Override
     public String toString() {
         String ret = "Money: "+countMoney()+"\nSpace: "+vehiclespace+"\nPassengers: "+countPassengers()+"\n";
-        for (Vehicle v: vehicles) {
-            ret += "["+v.toString();
+        Iterator<Vehicle> itr = iterator();
+        while(itr.hasNext()) {
+            ret += "["+itr.next().toString();
             /*ret += "\nPassengers: \n";
             for (Passenger p: v.getPassengers()) {
                 ret += p.toString()+"\n";

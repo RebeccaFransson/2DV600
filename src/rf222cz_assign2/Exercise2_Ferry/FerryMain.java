@@ -23,13 +23,11 @@ public class FerryMain {
         Passenger linda = new Passenger(20);
 
 
-        /*ferry.embark(linda);
+        ferry.embark(linda);
         ferry.embark(car);
         ferry.embark(bicycle);
         ferry.embark(bus);
-        ferry.embark(lorry);*/
-        ferry.embark(bus);
-        ferry.embark(bus);
+        ferry.embark(lorry);
 
         /*ferry.embark(new Bus(ferry.busSpace, 20));
         ferry.embark(new Bus(ferry.busSpace, 20));
@@ -41,8 +39,6 @@ public class FerryMain {
         ferry.embark(new Bus(ferry.busSpace, 20));
         ferry.embark(new Bus(ferry.busSpace, 20));
         ferry.embark(new Bus(ferry.busSpace, 20));*/
-
-        ferry.embark(linda);
 
         System.out.println("---Emarking---");
         System.out.println(ferry.toString());
