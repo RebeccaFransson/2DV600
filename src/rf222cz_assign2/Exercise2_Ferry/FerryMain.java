@@ -12,9 +12,6 @@ public class FerryMain {
     public static void main(String[] args) {
         Ferry ferry = new Ferry();
 
-        //Onödigt att skicka med de värderna som alltid är de samma för varje fordon
-        //Tillexempel: kostand, passengerCost, maxPassengers, space
-
         //Sends parameter space and passengers
         Bicycle bicycle = new Bicycle(ferry.bicycleSpace);
         Car car = new Car(ferry.carSpace, 3);
@@ -29,6 +26,7 @@ public class FerryMain {
         ferry.embark(bus);
         ferry.embark(lorry);
 
+        //Max number of space and room for passengers
         /*ferry.embark(new Bus(ferry.busSpace, 20));
         ferry.embark(new Bus(ferry.busSpace, 20));
         ferry.embark(new Bus(ferry.busSpace, 20));
@@ -47,7 +45,5 @@ public class FerryMain {
         ferry.disembark();
         System.out.println("---Disembarking---");
         System.out.println(ferry.toString());
-
-        //System.out.println(ferry.hasRoomFor());
     }
 }

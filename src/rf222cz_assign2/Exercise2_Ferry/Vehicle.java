@@ -20,6 +20,7 @@ public class Vehicle {
         maxPassengers = mp;
         passengers = p;
 
+        //Creates a new list with passengers for each vehicle
         passengersInVehicle = new ArrayList<>(passengers);
         for (int i = 0; i < passengers; i++){
             passengersInVehicle.add(new Passenger(passengerCost));

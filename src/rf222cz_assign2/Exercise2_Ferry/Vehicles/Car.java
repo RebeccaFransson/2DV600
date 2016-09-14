@@ -9,7 +9,7 @@ public class Car extends Vehicle {
 
     public Car(int space, int passengers){
         //cost = 200, passengerCost = 10, maxpassengers = 20
-        super(space, 200, passengers, 10, 20);
+        super(space, 200, passengers, 10, 20);//Calls the constructor in the parent-class - Vehicle
     }
 
     @Override

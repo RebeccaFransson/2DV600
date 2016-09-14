@@ -9,7 +9,7 @@ public class Bicycle extends Vehicle{
 
     public Bicycle(int space){
         //space = 0, cost = 20, passengerCost = 0, maxpassengers = 1
-        super(space, 20, 1, 0, 1);
+        super(space, 20, 1, 0, 1);//Calls the constructor in the parent-class - Vehicle
     }
 
     @Override

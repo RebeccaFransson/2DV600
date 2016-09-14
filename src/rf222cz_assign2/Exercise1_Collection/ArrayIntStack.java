@@ -18,7 +18,7 @@ public class ArrayIntStack extends da1031.AbstractIntCollection implements da103
 
     @Override
     public int pop() throws IndexOutOfBoundsException {
-        if(size() == 0){
+        if(isEmpty()){
             throw new IndexOutOfBoundsException("pop() -- Cant remove when the stacksize is zero");
         }
         int remove = values[0];
@@ -31,9 +31,15 @@ public class ArrayIntStack extends da1031.AbstractIntCollection implements da103
 
     @Override
     public int peek() throws IndexOutOfBoundsException {
-        if(size() == 0){
+        if(isEmpty()){
             throw new IndexOutOfBoundsException("peek() -- Cant get value when the stacksize is zero");
         }
         return values[0];
     }
+
+    @Override
+    public boolean isEmpty(){
+        return size() == 0;
+    }
+
 }

@@ -9,7 +9,7 @@ public class Lorry extends Vehicle {
 
     public Lorry(int space, int passengers){
         //cost = 300, passengerCost = 15, maxpassengers = 2
-        super(space, 300, passengers, 15, 2);
+        super(space, 300, passengers, 15, 2);//Calls the constructor in the parent-class - Vehicle
     }
     @Override
     public String toString() {

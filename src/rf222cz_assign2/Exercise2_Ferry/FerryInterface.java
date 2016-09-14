@@ -5,7 +5,7 @@ package rf222cz_assign2.Exercise2_Ferry;
  */
 public interface FerryInterface extends Iterable<Vehicle> {
     int countPassengers();             // Number of passengers on board
-    int countVehicleSpace();           // Used vehicle space. One car is 1.
+    int countVehicleSpace();           // Used vehicle space. One car is 5.
     int countMoney();                  // Earned money
     void embark(Vehicle v);            // Embark vehicle, warning if not enough space
     void embark(Passenger p);          // Embark passenger, warning if not enough room
