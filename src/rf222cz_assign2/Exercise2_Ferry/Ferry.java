@@ -20,12 +20,9 @@ public class Ferry implements FerryInterface {
     private int vehiclespace = 0;
     private int maxFerrySpace = carSpace * 40;
     private int money = 0;
-    private int maxPassengers = 200;
-
-
+    private int maxPassengerRoom = 200;
 
     public Ferry(){
-
         passengers = new ArrayList<Passenger>();
         vehicles = new ArrayList<Vehicle>();
     }
@@ -47,17 +44,12 @@ public class Ferry implements FerryInterface {
 
     @Override
     public void embark(Vehicle v) {
-        //Look for the vehicle on the ferry
-        boolean canEmbark = true;
-        for (Vehicle _v: vehicles) {
-            if (_v == v)
-                canEmbark = false;
-        }
-        //Check if there is enough space on ferry
-        if(!hasSpaceFor(v)){
-            System.err.println("Cant embark vehicle because of lack of space");
-        }else if(!canEmbark){
-            System.err.println("Cant embark, the vehicle is already on the ferry");
+
+        //Check if there is enough space on ferry or the vehicle is already on the ferry
+        if(!hasSpaceFor(v)) {
+            System.err.println("Cant embark vehicle because of lack of space or room for the passengers, or the vehicle is already on the ferry");
+        }else if(v.passengers > v.maxPassengers){
+            System.err.println("Number of passengers cant be more than "+v.maxPassengers);
         }else{
             money += v.cost;
             vehiclespace += v.space;
@@ -71,17 +63,9 @@ public class Ferry implements FerryInterface {
 
     @Override
     public void embark(Passenger p) {
-        //Look for the passenger on the ferry
-        boolean canEmbark = true;
-        for (Passenger _p: passengers) {
-            if (_p == p)
-                canEmbark = false;
-        }
-        //Check if there is enough space on ferry
+        //Check if there is enough space on ferry or the passenger is already on the ferry
         if(!hasRoomFor(p)){
-            System.err.println("Cant embark passenger because of lack of room");
-        }else if(!canEmbark){
-            System.err.println("Cant embark, the passenger is already on the ferry");
+            System.err.println("Cant embark passenger because of lack of room or the passenger is already on the ferry.");
         }else{
             money += p.cost;
             passengers.add(p);
@@ -90,32 +74,33 @@ public class Ferry implements FerryInterface {
 
     @Override
     public void disembark() {
-
+        vehicles.clear();
+        passengers.clear();
+        vehiclespace = 0;
     }
 
     @Override
     public boolean hasSpaceFor(Vehicle v) {
-        //Foreach passaenger kolla om has room for
-        return countVehicleSpace() + v.space < maxFerrySpace;
+        //Kolla om det finns plats för alla v passengers
+        return countVehicleSpace() + v.space <= maxFerrySpace && !vehicles.contains(v) && countPassengers() + v.passengers <= maxPassengerRoom;
     }
 
     @Override
     public boolean hasRoomFor(Passenger p) {
-        //plus en för att se om det ärmindre än eller lika med max
-        return countPassengers() < maxPassengers;
+        return countPassengers() < maxPassengerRoom && !passengers.contains(p);
     }
 
     @Override
     public Iterator<Vehicle> iterator() {
         return new Iterator() {
             private int count = 0;
-        public Vehicle next() {return vehicles[count++];}
+            public Vehicle next() {return vehicles.get(count++);}
 
-        public boolean hasNext() {return count<vehicles.size();}
+            public boolean hasNext() {return count<vehicles.size();}
 
-        public void remove() {
-            throw new RuntimeException("remove() is not implemented");
-        }
+            public void remove() {
+                throw new RuntimeException("remove() is not implemented");
+            }
         };
     }
 

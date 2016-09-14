@@ -1,0 +1,32 @@
+1. What is the Java Virtual Machine? What is Bytecode?
+Java Virtual Machine: Is a simulated compuser that suns within the system. JVM runs programs written in Java.
+Bytecode: Bydecodes are numeric codes, constants and references that is compacted. It's therefore it results in much better performance than direct source code when running a program.
+
+2. What is the Java Classpath?
+Classpath is a parameter that specifies the location of user-defined classes/packages. The parameter is used when running the java-program.
+
+3. How do you compile and run your java program without the help of an Integrated Development Environment (IDE) (e.g., an IDE like Eclipse)?
+In the command prompt. Just write "java" and your class.
+
+4. What is a JAR file?
+JAR is a package file format. Stands for "Java Archive". Its used for aggregate many java class files into one file.
+
+5. How do you declare the starting point of a Java application?
+By creating a main(String[] args) method.
+
+6. What is a package? Why is important to declare classes inside packages?
+A package is a namespace that organizes a set of related classes and interfaces.
+Important to declare classes because it organizes the classes in namespaces and if a class has no modifier its visible only within its own package.
+
+7. What is an interface? Why is it important to not change them?
+In its most common form, an interface is a group of related methods with empty bodies. With a interface a class becomes more formal about the behavior it promises to provide.
+If you decide to change a interface you will need to change all the children-classes too.
+
+8. Which visibility levels are available in Java? What is the default visibility for classes, methods, and fields?
+Public, protected, no modifier and private.
+
+9. In the context of Java, what is an Exception? And what is an Error?
+10.What happened if your program terminates with an OutOfMemoryError, or NoClassDefFoundErroror NullPointerException?
+11.How do you handle Exceptions in your program?
+12.Why is it important to test your code/application/product, before you deliver it to your customer/boss/teacher?
+13.What is JavaDoc? How do you write documentation with it?

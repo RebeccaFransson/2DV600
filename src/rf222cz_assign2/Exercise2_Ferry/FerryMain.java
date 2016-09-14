@@ -14,30 +14,42 @@ public class FerryMain {
 
         //Onödigt att skicka med de värderna som alltid är de samma för varje fordon
         //Tillexempel: kostand, passengerCost, maxPassengers, space
-        Bicycle bicycle = new Bicycle(ferry.bicycleSpace, 20);
-        Car car = new Car(ferry.carSpace, 100, 3, 15, 4);
-        Bus bus = new Bus(ferry.busSpace, 200, 19, 10, 20);
-        Lorry lorry = new Lorry(ferry.lorrySpace, 300, 1, 15, 2);
-        Lorry lorry2 = new Lorry(ferry.lorrySpace, 300, 1, 15, 2);
-        Lorry lorry3 = new Lorry(ferry.lorrySpace, 300, 1, 15, 2);
-        Lorry lorry4 = new Lorry(ferry.lorrySpace, 300, 1, 15, 2);
+
+        //Sends parameter space and passengers
+        Bicycle bicycle = new Bicycle(ferry.bicycleSpace);
+        Car car = new Car(ferry.carSpace, 3);
+        Bus bus = new Bus(ferry.busSpace, 19);
+        Lorry lorry = new Lorry(ferry.lorrySpace, 1);
         Passenger linda = new Passenger(20);
 
 
-
-        ferry.embark(linda);
+        /*ferry.embark(linda);
         ferry.embark(car);
         ferry.embark(bicycle);
         ferry.embark(bus);
-        ferry.embark(lorry);
+        ferry.embark(lorry);*/
+        ferry.embark(bus);
+        ferry.embark(bus);
 
+        /*ferry.embark(new Bus(ferry.busSpace, 20));
+        ferry.embark(new Bus(ferry.busSpace, 20));
+        ferry.embark(new Bus(ferry.busSpace, 20));
+        ferry.embark(new Bus(ferry.busSpace, 20));
+        ferry.embark(new Bus(ferry.busSpace, 20));
+        ferry.embark(new Bus(ferry.busSpace, 20));
+        ferry.embark(new Bus(ferry.busSpace, 20));
+        ferry.embark(new Bus(ferry.busSpace, 20));
+        ferry.embark(new Bus(ferry.busSpace, 20));
+        ferry.embark(new Bus(ferry.busSpace, 20));*/
+
+        ferry.embark(linda);
+
+        System.out.println("---Emarking---");
         System.out.println(ferry.toString());
 
-        ferry.embark(lorry2);
-        ferry.embark(lorry3);
-        ferry.embark(lorry4);
 
-        System.out.println("After more lorrys");
+        ferry.disembark();
+        System.out.println("---Disembarking---");
         System.out.println(ferry.toString());
 
         //System.out.println(ferry.hasRoomFor());

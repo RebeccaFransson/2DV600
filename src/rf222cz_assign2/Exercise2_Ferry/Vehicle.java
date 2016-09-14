@@ -18,11 +18,7 @@ public class Vehicle {
         cost = c;
         passengerCost = pc;
         maxPassengers = mp;
-        if(p > maxPassengers){
-            System.err.println("Number of passengers cant be more than "+maxPassengers);
-        }else{
-            passengers = p;
-        }
+        passengers = p;
 
         passengersInVehicle = new ArrayList<>(passengers);
         for (int i = 0; i < passengers; i++){

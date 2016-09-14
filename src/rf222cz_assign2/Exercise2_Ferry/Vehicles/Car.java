@@ -7,8 +7,9 @@ import rf222cz_assign2.Exercise2_Ferry.Vehicle;
  */
 public class Car extends Vehicle {
 
-    public Car(int s, int c, int p, int pc, int mp){
-        super(s, c, p, pc, mp);
+    public Car(int space, int passengers){
+        //cost = 200, passengerCost = 10, maxpassengers = 20
+        super(space, 200, passengers, 10, 20);
     }
 
     @Override

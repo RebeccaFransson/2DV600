@@ -6,8 +6,8 @@ package rf222cz_assign2.Exercise2_Ferry;
 public class Passenger {
     protected int cost;
 
-    public Passenger(int c){
-        this.cost = c;
+    public Passenger(int passengerCost){
+        this.cost = passengerCost;
     }
 
     @Override

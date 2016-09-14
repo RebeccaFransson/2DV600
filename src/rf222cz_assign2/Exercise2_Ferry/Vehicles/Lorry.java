@@ -6,12 +6,10 @@ import rf222cz_assign2.Exercise2_Ferry.Vehicle;
  * Created by ymafr on 2016-09-13.
  */
 public class Lorry extends Vehicle {
-    /*protected int space = 40;
-    protected int cost = 300;
-    protected int passengerCost = 15;
-    protected int maxPassengers = 2;*/
-    public Lorry(int s, int c, int p, int pc, int mp){
-        super(s, c, p, pc, mp);
+
+    public Lorry(int space, int passengers){
+        //cost = 300, passengerCost = 15, maxpassengers = 2
+        super(space, 300, passengers, 15, 2);
     }
     @Override
     public String toString() {

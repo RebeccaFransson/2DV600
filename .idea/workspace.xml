@@ -2,26 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="256597b3-9d23-4f43-bd1a-8bce616840b4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign2/Exercide2_Ferry/Ferry.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign2/Exercide2_Ferry/FerryInterface.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign2/Exercide2_Ferry/FerryMain.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign2/Exercide2_Ferry/Passenger.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign2/Exercide2_Ferry/Vehicle.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign2/Exercide2_Ferry/Vehicles/Bicycle.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign2/Exercide2_Ferry/Vehicles/Bus.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign2/Exercide2_Ferry/Vehicles/Car.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign2/Exercide2_Ferry/Vehicles/Lorry.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/rf222cz_assign2/Exercide2_Ferry/Ferry.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Ferry.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/rf222cz_assign2/Exercide2_Ferry/FerryInterface.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/FerryInterface.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/rf222cz_assign2/Exercide2_Ferry/FerryMain.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/FerryMain.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/rf222cz_assign2/Exercide2_Ferry/Passenger.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Passenger.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/rf222cz_assign2/Exercide2_Ferry/Vehicle.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicle.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/rf222cz_assign2/Exercide2_Ferry/Vehicles/Bicycle.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicles/Bicycle.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/rf222cz_assign2/Exercide2_Ferry/Vehicles/Bus.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicles/Bus.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/rf222cz_assign2/Exercide2_Ferry/Vehicles/Car.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicles/Car.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/rf222cz_assign2/Exercide2_Ferry/Vehicles/Lorry.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicles/Lorry.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign2/Exercise2_Ferry/Ferry.class" afterPath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign2/Exercise2_Ferry/Ferry.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign2/Exercise2_Ferry/FerryMain.class" afterPath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign2/Exercise2_Ferry/FerryMain.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign2/Exercise2_Ferry/Passenger.class" afterPath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign2/Exercise2_Ferry/Passenger.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign2/Exercise2_Ferry/Vehicle.class" afterPath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign2/Exercise2_Ferry/Vehicle.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign2/Exercise2_Ferry/Vehicles/Bicycle.class" afterPath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign2/Exercise2_Ferry/Vehicles/Bicycle.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign2/Exercise2_Ferry/Vehicles/Bus.class" afterPath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign2/Exercise2_Ferry/Vehicles/Bus.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign2/Exercise2_Ferry/Vehicles/Car.class" afterPath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign2/Exercise2_Ferry/Vehicles/Car.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign2/Exercise2_Ferry/Vehicles/Lorry.class" afterPath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign2/Exercise2_Ferry/Vehicles/Lorry.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rf222cz_assign2/TheoreticalQuestions.txt" afterPath="$PROJECT_DIR$/src/rf222cz_assign2/TheoreticalQuestions.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign2/TheoreticalQuestions.txt" afterPath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign2/TheoreticalQuestions.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Ferry.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Ferry.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/FerryMain.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/FerryMain.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Passenger.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Passenger.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicle.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicle.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicles/Bicycle.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicles/Bicycle.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicles/Bus.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicles/Bus.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicles/Car.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicles/Car.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicles/Lorry.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicles/Lorry.java" />
     </list>
     <ignored path="2DV600.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,14 +39,14 @@
     <favorites_list name="2DV600" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.73953485">
+    <splitter split-orientation="horizontal" split-proportion="0.5215947">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="Vehicle.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicle.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="52">
-                  <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+                <state relative-caret-position="239">
+                  <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
                   <folding />
                 </state>
               </provider>
@@ -57,13 +55,13 @@
           <file leaf-file-name="Passenger.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Passenger.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="102">
-                  <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+                <state relative-caret-position="153">
+                  <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
                   <folding>
-                    <element signature="e#162#163#0" expanded="true" />
-                    <element signature="e#191#192#0" expanded="true" />
-                    <element signature="e#237#238#0" expanded="true" />
-                    <element signature="e#296#297#0" expanded="true" />
+                    <element signature="e#174#175#0" expanded="true" />
+                    <element signature="e#215#216#0" expanded="true" />
+                    <element signature="e#261#262#0" expanded="true" />
+                    <element signature="e#320#321#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -72,43 +70,15 @@
           <file leaf-file-name="Ferry.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Ferry.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="113" column="64" selection-start-line="113" selection-start-column="64" selection-end-line="113" selection-end-column="64" />
+                <state relative-caret-position="289">
+                  <caret line="95" column="34" selection-start-line="95" selection-start-column="34" selection-end-line="95" selection-end-column="34" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#3025#3026#0" expanded="true" />
-                    <element signature="e#3106#3107#0" expanded="true" />
+                    <element signature="e#2515#2516#0" expanded="true" />
+                    <element signature="e#2601#2602#0" expanded="true" />
+                    <element signature="e#2897#2898#0" expanded="true" />
+                    <element signature="e#2986#2987#0" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="TheoreticalQuestions.txt" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/TheoreticalQuestions.txt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="425">
-                  <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Queue.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/rf222cz_assign1/Queue/Queue.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="426">
-                  <caret line="108" column="10" selection-start-line="88" selection-start-column="8" selection-end-line="108" selection-end-column="10" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="AbstractIntCollection.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/da1031/AbstractIntCollection.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="350">
-                  <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="65" selection-end-column="5" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -116,8 +86,8 @@
           <file leaf-file-name="FerryMain.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/FerryMain.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="324">
-                  <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+                <state relative-caret-position="286">
+                  <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -139,15 +109,12 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Bicycle.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Bicycle.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicles/Bicycle.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-                  <folding>
-                    <element signature="e#214#215#0" expanded="true" />
-                    <element signature="e#250#251#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="170">
+                  <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -155,12 +122,9 @@
           <file leaf-file-name="Car.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicles/Car.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="17" selection-end-column="5" />
-                  <folding>
-                    <element signature="e#230#231#0" expanded="true" />
-                    <element signature="e#268#269#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="187">
+                  <caret line="11" column="24" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="24" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -168,25 +132,19 @@
           <file leaf-file-name="Bus.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicles/Bus.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="19" selection-end-column="5" />
-                  <folding>
-                    <element signature="e#369#370#0" expanded="true" />
-                    <element signature="e#407#408#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="136">
+                  <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Lorry.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Lorry.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicles/Lorry.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="136">
-                  <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-                  <folding>
-                    <element signature="e#372#373#0" expanded="true" />
-                    <element signature="e#410#411#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="170">
+                  <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -254,14 +212,14 @@
         <option value="$PROJECT_DIR$/src/rf222cz_assign2/Exercide2_Ferry/Vehicle.java" />
         <option value="$PROJECT_DIR$/src/rf222cz_assign2/Exercide2_Ferry/FerryMain.java" />
         <option value="$PROJECT_DIR$/src/rf222cz_assign2/Exercide2_Ferry/Passenger.java" />
+        <option value="$PROJECT_DIR$/src/rf222cz_assign2/TheoreticalQuestions.txt" />
         <option value="$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicles/Car.java" />
+        <option value="$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicles/Lorry.java" />
+        <option value="$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicles/Bus.java" />
         <option value="$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicles/Bicycle.java" />
         <option value="$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Passenger.java" />
         <option value="$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicle.java" />
-        <option value="$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicles/Bus.java" />
-        <option value="$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicles/Lorry.java" />
         <option value="$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/FerryMain.java" />
-        <option value="$PROJECT_DIR$/src/rf222cz_assign2/TheoreticalQuestions.txt" />
         <option value="$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Ferry.java" />
       </list>
     </option>
@@ -791,7 +749,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34606987" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3504367" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1105,68 +1063,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicles/Bicycle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-          <folding>
-            <element signature="e#214#215#0" expanded="true" />
-            <element signature="e#250#251#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicles/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <element signature="e#230#231#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicles/Bus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="e#369#370#0" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicles/Lorry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding>
-            <element signature="e#372#373#0" expanded="true" />
-            <element signature="e#410#411#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/FerryMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise1_Collection/ArrayIntList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1215,19 +1111,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Passenger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-          <folding>
-            <element signature="e#162#163#0" expanded="true" />
-            <element signature="e#191#192#0" expanded="true" />
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#296#297#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/da1031/AbstractIntCollection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -1236,14 +1119,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Ferry.java">
+    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicles/Car.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="113" column="64" selection-start-line="113" selection-start-column="64" selection-end-line="113" selection-end-column="64" />
+        <state relative-caret-position="187">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicles/Bus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicles/Lorry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Passenger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+          <folding>
+            <element signature="e#174#175#0" expanded="true" />
+            <element signature="e#215#216#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Vehicles/Bicycle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/FerryMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3025#3026#0" expanded="true" />
-            <element signature="e#3106#3107#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise2_Ferry/Ferry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="95" column="34" selection-start-line="95" selection-start-column="34" selection-end-line="95" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2515#2516#0" expanded="true" />
+            <element signature="e#2601#2602#0" expanded="true" />
+            <element signature="e#2897#2898#0" expanded="true" />
+            <element signature="e#2986#2987#0" expanded="true" />
           </folding>
         </state>
       </provider>
