@@ -1,4 +1,4 @@
-package rf222cz_assign2.Exercide2_Ferry;
+package rf222cz_assign2.Exercise2_Ferry;
 
 /**
  * Created by ymafr on 2016-09-13.
