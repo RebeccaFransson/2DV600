@@ -24,9 +24,23 @@ If you decide to change a interface you will need to change all the children-cla
 
 8. Which visibility levels are available in Java? What is the default visibility for classes, methods, and fields?
 Public, protected, no modifier and private.
+Default for classes, methods and fields is no modifier, also called package private(only visible for classes in the same package)
 
 9. In the context of Java, what is an Exception? And what is an Error?
-10.What happened if your program terminates with an OutOfMemoryError, or NoClassDefFoundErroror NullPointerException?
+Exception is a class. This class is a Checked exception, that means it needs to be declared in a method constructors throw clause if thery can be thrown by the execution of the method/constructor.
+Error is a subclass of throwable that indicated serious problems that a application should not try to catch.
+
+10.What happened if your program terminates with an OutOfMemoryError, or NoClassDefFoundError NullPointerException?
+OutOfMemoryError is thrown when Java virtual machine is out of memory and it can not take any from the garbage collector.
+NoClassDefFoundError occurs if ClassLoader is not able to find the class while loading it.
+NullPointerException is thrown when an application attempts to use null in a case where an object is required.
+
 11.How do you handle Exceptions in your program?
+A method catches an exception using a combination of the try and catch keywords.
+A try/catch block is placed around the code that might generate an exception.
+
 12.Why is it important to test your code/application/product, before you deliver it to your customer/boss/teacher?
+To make sure the application doesn't have any bugs and is stable, and that all functionality is in the application.
+
 13.What is JavaDoc? How do you write documentation with it?
+JavaDoc is a tool that in an standard way created documentation for a java-project. It generates HTML from the comments in the code.
