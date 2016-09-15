@@ -50,7 +50,7 @@ public class ArrayIntList extends da1031.AbstractIntCollection implements da1031
 
     @Override
     public boolean isEmpty(){
-        return values.length == 0;
+        return size == 0;
     }
 
     @Override

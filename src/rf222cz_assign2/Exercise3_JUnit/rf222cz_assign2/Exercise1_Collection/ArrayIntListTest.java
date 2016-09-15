@@ -1,6 +1,7 @@
-package rf222cz_assign2.Exercise1_Collection;
+package rf222cz_assign2.Exercise3_JUnit.rf222cz_assign2.Exercise1_Collection;
 
 import org.junit.Test;
+import rf222cz_assign2.Exercise1_Collection.ArrayIntList;
 
 import static org.junit.Assert.*;
 
@@ -8,38 +9,85 @@ import static org.junit.Assert.*;
  * Created by ymafr on 2016-09-14.
  */
 public class ArrayIntListTest {
+
+    @Test (expected = IndexOutOfBoundsException.class)
+    public void testAddAt(){
+        //Testing to add 55 between 7 and 8
+        int addValue = 55;
+        ArrayIntList intList = addMany(10);
+        intList.addAt(55, 7);
+        //Getting it soo se if its equal to the addValue
+        assertEquals(addValue, intList.get(7));
+
+        //Force exception with remove with an index that is out of bounds
+        intList.addAt(20, 20);
+    }
+
     @Test
-    public void add() throws Exception {
+    public void testIndexOf(){
+        //testing to get index of a element
+        //Array looks like this: [ 0 1 2 3 4 5 6 7 8 9 ]
+        ArrayIntList intList = addMany(10);
+        assertEquals(5, intList.indexOf(5));
+    }
+
+    @Test (expected = IndexOutOfBoundsException.class)
+    public void testRemoveNSize(){
+        //Creating a list and then removing.
+        //The first-list size should not be equal to the removed-list size.
+        ArrayIntList intList = addMany(10);
+        int firstSize = intList.size();
+        intList.remove(2);
+        assertNotEquals(firstSize, intList.size());
+
+        //Force exception with remove with an index that is out of bounds
+        intList.remove(20);
+    }
+
+    @Test
+    public void testGet(){
+        //testing to get the first element after adding it
         ArrayIntList intList = new ArrayIntList();
         intList.add(1);
-    }
 
-    @Test
-    public void addAt() throws Exception {
-
-    }
-
-    @Test
-    public void remove() throws Exception {
-
-    }
-
-    @Test
-    public void get() throws Exception {
-        ArrayIntList intList = new ArrayIntList();
-        intList.add(1);
-        //Get the first element
         assertEquals(1, intList.get(0));
+
+
+        //Force exception(and catching it) with remove with an index that is out of bounds
+        boolean didCatch = false;
+        try {
+            intList.get(2);
+        }catch(IndexOutOfBoundsException e) {
+            didCatch = true;
+        }
+        assertTrue(didCatch);
+
+    }
+    @Test
+    public void testAdd() {
+        //Adds 10 new elements then check if they are added.
+        ArrayIntList intList = addMany(10);
+        assertEquals(10, intList.size());
     }
 
     @Test
-    public void isEmpty() throws Exception {
+    public void testIsEmpty() throws Exception {
+        //Creates new list check if empty
+        ArrayIntList intList = new ArrayIntList();
+        assertEquals(true, intList.isEmpty());
 
+        //Adds element to list and then checks if empty again
+        ArrayIntList intList2 = addMany(10);
+        assertEquals(false, intList2.isEmpty());
     }
 
-    @Test
-    public void indexOf() throws Exception {
 
+    //Help method
+    private ArrayIntList addMany(int size) {
+        ArrayIntList intList = new ArrayIntList();
+        for (int i = 0; i < size; i++)
+            intList.add(i);
+        return intList;
     }
 
 }
