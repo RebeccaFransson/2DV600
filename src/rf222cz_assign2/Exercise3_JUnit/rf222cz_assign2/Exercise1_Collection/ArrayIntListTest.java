@@ -1,5 +1,6 @@
 package rf222cz_assign2.Exercise3_JUnit.rf222cz_assign2.Exercise1_Collection;
 
+import org.junit.Before;
 import org.junit.Test;
 import rf222cz_assign2.Exercise1_Collection.ArrayIntList;
 
@@ -10,8 +11,17 @@ import static org.junit.Assert.*;
  */
 public class ArrayIntListTest {
 
+    private static int count = 0;
+
+    @Before
+    public void beforeTest(){
+        count++;
+        System.out.print("Test nr: "+count+" - ");
+    }
+
     @Test (expected = IndexOutOfBoundsException.class)
     public void testAddAt(){
+        System.out.println("AddAt()");
         //Testing to add 55 between 7 and 8
         int addValue = 55;
         ArrayIntList intList = addMany(10);
@@ -25,6 +35,7 @@ public class ArrayIntListTest {
 
     @Test
     public void testIndexOf(){
+        System.out.println("IndexOf()");
         //testing to get index of a element
         //Array looks like this: [ 0 1 2 3 4 5 6 7 8 9 ]
         ArrayIntList intList = addMany(10);
@@ -33,6 +44,7 @@ public class ArrayIntListTest {
 
     @Test (expected = IndexOutOfBoundsException.class)
     public void testRemoveNSize(){
+        System.out.println("RemoveNSize()");
         //Creating a list and then removing.
         //The first-list size should not be equal to the removed-list size.
         ArrayIntList intList = addMany(10);
@@ -46,6 +58,7 @@ public class ArrayIntListTest {
 
     @Test
     public void testGet(){
+        System.out.println("Get()");
         //testing to get the first element after adding it
         ArrayIntList intList = new ArrayIntList();
         intList.add(1);
@@ -65,13 +78,15 @@ public class ArrayIntListTest {
     }
     @Test
     public void testAdd() {
+        System.out.println("Add()");
         //Adds 10 new elements then check if they are added.
         ArrayIntList intList = addMany(10);
         assertEquals(10, intList.size());
     }
 
     @Test
-    public void testIsEmpty() throws Exception {
+    public void testIsEmpty(){
+        System.out.println("IsEmpty()");
         //Creates new list check if empty
         ArrayIntList intList = new ArrayIntList();
         assertEquals(true, intList.isEmpty());

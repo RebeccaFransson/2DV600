@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ee9f38d-734b-44b5-a284-5a043e1df84b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/2DV600/CollectionTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/2DV600/rf222cz_assign2/Exercise1_Collection/ArrayIntListTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/2DV600/rf222cz_assign2/Exercise1_Collection/ArrayIntStackTest.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2DV600.iml" afterPath="$PROJECT_DIR$/2DV600.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise1_Collection/ArrayIntList.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise1_Collection/ArrayIntList.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign2/Exercise1_Collection/ArrayIntStackTest.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise3_JUnit/CollectionTest.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise3_JUnit/CollectionTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise3_JUnit/rf222cz_assign2/Exercise1_Collection/ArrayIntListTest.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise3_JUnit/rf222cz_assign2/Exercise1_Collection/ArrayIntListTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise3_JUnit/rf222cz_assign2/Exercise1_Collection/ArrayIntStackTest.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise3_JUnit/rf222cz_assign2/Exercise1_Collection/ArrayIntStackTest.java" />
     </list>
     <ignored path="2DV600.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,8 +31,8 @@
           <file leaf-file-name="CollectionTest.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise3_JUnit/CollectionTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="425">
-                  <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+                <state relative-caret-position="255">
+                  <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -46,11 +40,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ArrayIntListTest.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise3_JUnit/rf222cz_assign2/Exercise1_Collection/ArrayIntListTest.java">
+          <file leaf-file-name="ArrayIntStackTest.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise3_JUnit/rf222cz_assign2/Exercise1_Collection/ArrayIntStackTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="118">
-                  <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+                <state relative-caret-position="169">
+                  <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -58,15 +52,13 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ArrayIntList.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise1_Collection/ArrayIntList.java">
+          <file leaf-file-name="ArrayIntStack.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise1_Collection/ArrayIntStack.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="259">
-                  <caret line="32" column="66" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="66" />
+                <state relative-caret-position="34">
+                  <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
                   <folding>
-                    <element signature="method#addAt#0;class#ArrayIntList#0" expanded="false" />
-                    <element signature="method#remove#0;class#ArrayIntList#0" expanded="false" />
-                    <element signature="method#get#0;class#ArrayIntList#0" expanded="false" />
+                    <element signature="method#push#0;class#ArrayIntStack#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -75,7 +67,7 @@
           <file leaf-file-name="CollectionMain.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise1_Collection/CollectionMain.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="289">
+                <state relative-caret-position="-170">
                   <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="58" />
                   <folding />
                 </state>
@@ -86,25 +78,25 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="IntList.java" pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/Desktop/src/junit/list_test/IntList.java">
+          <file leaf-file-name="TestIntList.java" pinned="false" current-in-tab="false">
+            <entry file="file://$USER_HOME$/Desktop/src/junit/list_test/TestIntList.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state relative-caret-position="238">
+                  <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
                   <folding>
-                    <element signature="e#0#655#0" expanded="true" />
+                    <element signature="e#0#4004#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="TestIntList.java" pinned="false" current-in-tab="true">
-            <entry file="file://$USER_HOME$/Desktop/src/junit/list_test/TestIntList.java">
+          <file leaf-file-name="ArrayIntListTest.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise3_JUnit/rf222cz_assign2/Exercise1_Collection/ArrayIntListTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-629">
-                  <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="71" selection-end-column="25" />
+                <state relative-caret-position="138">
+                  <caret line="44" column="9" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="54" />
                   <folding>
-                    <element signature="e#0#4004#0" expanded="true" />
+                    <element signature="imports" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -129,6 +121,7 @@
         <option value="$PROJECT_DIR$/src/rf222cz_assign2/Exercise1_Collection/ArrayIntList.java" />
         <option value="$PROJECT_DIR$/src/rf222cz_assign2/Exercise3_JUnit/CollectionTest.java" />
         <option value="$PROJECT_DIR$/src/rf222cz_assign2/Exercise3_JUnit/rf222cz_assign2/Exercise1_Collection/ArrayIntListTest.java" />
+        <option value="$PROJECT_DIR$/src/rf222cz_assign2/Exercise3_JUnit/rf222cz_assign2/Exercise1_Collection/ArrayIntStackTest.java" />
       </list>
     </option>
   </component>
@@ -594,7 +587,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -635,49 +628,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Desktop/src/junit/list_test/IntList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#655#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2DV600.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/src/junit/list_test/TestIntList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-629">
-          <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="71" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#4004#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise1_Collection/CollectionMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise3_JUnit/CollectionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -693,10 +648,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Desktop/src/junit/list_test/IntList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#655#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/src/junit/list_test/TestIntList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#4004#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise3_JUnit/CollectionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise1_Collection/CollectionMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-170">
+          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise3_JUnit/rf222cz_assign2/Exercise1_Collection/ArrayIntListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        <state relative-caret-position="138">
+          <caret line="44" column="9" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise1_Collection/ArrayIntStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="method#push#0;class#ArrayIntStack#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise3_JUnit/rf222cz_assign2/Exercise1_Collection/ArrayIntStackTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
