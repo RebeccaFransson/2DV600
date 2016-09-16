@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ee9f38d-734b-44b5-a284-5a043e1df84b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise5_CountWords/WordTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign2/Exercise5_CountWords/IdentifyWordsMain.class" afterPath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign2/Exercise5_CountWords/IdentifyWordsMain.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise5_CountWords/Word.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise5_CountWords/Word.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise5_CountWords/WordTest.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign2/Exercise5_CountWords/WordTest.java" />
     </list>
     <ignored path="2DV600.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,8 +46,8 @@
           <file leaf-file-name="Word.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise5_CountWords/Word.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="27" column="70" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="70" />
+                <state relative-caret-position="204">
+                  <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
                   <folding>
                     <element signature="e#192#193#0" expanded="true" />
                     <element signature="e#223#224#0" expanded="true" />
@@ -63,8 +61,8 @@
           <file leaf-file-name="WordTest.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise5_CountWords/WordTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+                <state relative-caret-position="340">
+                  <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -111,8 +109,8 @@
           <file leaf-file-name="WordTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise5_CountWords/WordTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="169">
-                  <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+                <state relative-caret-position="407">
+                  <caret line="55" column="35" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -695,34 +693,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="WordTest - 2016.09.16 at 17h 04m 44s.xml">
+    <history-entry file="WordTest - 2016.09.16 at 17h 17m 09s.xml">
       <configuration name="WordTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordTest - 2016.09.16 at 17h 04m 55s.xml">
+    <history-entry file="WordTest - 2016.09.16 at 17h 18m 44s.xml">
       <configuration name="WordTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordTest - 2016.09.16 at 17h 05m 43s.xml">
+    <history-entry file="WordTest - 2016.09.16 at 17h 19m 55s.xml">
       <configuration name="WordTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordTest - 2016.09.16 at 17h 06m 42s.xml">
+    <history-entry file="WordTest - 2016.09.16 at 17h 20m 39s.xml">
       <configuration name="WordTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordTest - 2016.09.16 at 17h 07m 25s.xml">
+    <history-entry file="WordTest - 2016.09.16 at 17h 21m 20s.xml">
       <configuration name="WordTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordTest - 2016.09.16 at 17h 08m 52s.xml">
+    <history-entry file="WordTest - 2016.09.16 at 17h 23m 10s.xml">
       <configuration name="WordTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordTest - 2016.09.16 at 17h 09m 07s.xml">
+    <history-entry file="WordTest - 2016.09.16 at 17h 23m 25s.xml">
       <configuration name="WordTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordTest - 2016.09.16 at 17h 09m 14s.xml">
+    <history-entry file="WordTest - 2016.09.16 at 17h 23m 39s.xml">
       <configuration name="WordTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordTest - 2016.09.16 at 17h 09m 52s.xml">
+    <history-entry file="WordTest - 2016.09.16 at 17h 23m 53s.xml">
       <configuration name="WordTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordTest - 2016.09.16 at 17h 10m 05s.xml">
+    <history-entry file="WordTest - 2016.09.16 at 17h 24m 07s.xml">
       <configuration name="WordTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -737,7 +735,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297619" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -1063,8 +1061,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise5_CountWords/Word.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="27" column="70" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="70" />
+        <state relative-caret-position="204">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
           <folding>
             <element signature="e#192#193#0" expanded="true" />
             <element signature="e#223#224#0" expanded="true" />
@@ -1076,8 +1074,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise5_CountWords/WordTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+        <state relative-caret-position="407">
+          <caret line="55" column="35" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

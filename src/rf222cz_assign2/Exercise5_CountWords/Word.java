@@ -16,10 +16,15 @@ public class Word implements Comparable<Word>{
     @Override
     public int hashCode() {
         //"compute a hash value for word"
-        return this.word.hashCode();
+        int hash = 7;
+        for (int i = 0; i < word.length(); i++) {
+            hash = hash*31 + Character.getNumericValue(i);
+        }
+        return hash;
     }
 
     @Override
+    //TODO: need to be same instance?
     public boolean equals(Object other) {
         //"true if two words are equal"
         return this.word.toLowerCase().equals(other.toString().toLowerCase());
@@ -30,6 +35,6 @@ public class Word implements Comparable<Word>{
     @Override
     public int compareTo(Word w) {
         //"compares two words lexicographically"
-        return this.word.toString().compareTo(w.toString());
+        return this.word.compareToIgnoreCase(w.toString());
     }
 }

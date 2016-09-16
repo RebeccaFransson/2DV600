@@ -4,9 +4,7 @@ import org.junit.Test;
 import org.junit.internal.TextListener;
 import org.junit.runner.JUnitCore;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 /**
  * Created by ymafr on 2016-09-16.
@@ -44,5 +42,20 @@ public class WordTest {
         if(w.compareTo(new Word("January")) < 0)
             compare = true;
         assertTrue(compare);
+    }
+
+    @Test
+    public void testNotEquals(){
+        System.out.println("testNotEquals()");
+        Word w = new Word("hello");
+        assertFalse(w.equals(1));
+    }
+
+    @Test
+    public void testHashCode(){
+        Word w = new Word("hello");
+        Word w2 = new Word("loelh");
+
+        assertEquals(w.hashCode(), w2.hashCode());
     }
 }
