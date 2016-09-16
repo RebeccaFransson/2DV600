@@ -44,7 +44,7 @@ public class LargestK {
                 }
                 //get the sum of the array
                 sum = 0;
-                for(int i = 1; i < K.size(); i++)
+                for(int i = 0; i < K.size(); i++)
                     sum += K.get(i);
 
             }

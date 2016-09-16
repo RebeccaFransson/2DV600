@@ -28,8 +28,8 @@ public class HighLow {
 
             try{
                 int guess = Integer.parseInt(guessText);
-                if(guess > 100 || guess < 1){
-                    System.err.println("I need a number between 1-100, try again:");
+                if(guess > 100 || guess < 1 && guess%2 == 0){
+                    System.err.println("I need a ODD number between 1-100, try again:");
                 }else if(guess > randomNum){
                     System.out.println("Sorry, its lower!");
                     count++;

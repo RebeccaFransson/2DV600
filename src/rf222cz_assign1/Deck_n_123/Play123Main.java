@@ -10,11 +10,11 @@ public class Play123Main {
         int wins = 0;
 
         //Play 1-2-3 a 1000 times
-        for (int i = 0; i <= 1000; i++){
+        for (int i = 0; i <= 10000; i++){
             if(play123(deck))
                 wins++;
         }
-        float percent = (wins * 100.0f) / 1000;
+        float percent = (wins * 100.0f) / 10000;
         System.out.println("Wins: "+wins+"\nChance to win: "+percent+"%");
     }
 

@@ -1,7 +1,10 @@
 package rf222cz_assign2.Exercise3_JUnit.rf222cz_assign2.Exercise1_Collection;
 
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
+import org.omg.IOP.ExceptionDetailMessage;
 import rf222cz_assign2.Exercise1_Collection.ArrayIntList;
 
 import static org.junit.Assert.*;
@@ -10,6 +13,8 @@ import static org.junit.Assert.*;
  * Created by ymafr on 2016-09-14.
  */
 public class ArrayIntListTest {
+    @Rule
+    public final ExpectedException exception = ExpectedException.none();
 
     private static int count = 0;
 
@@ -19,8 +24,9 @@ public class ArrayIntListTest {
         System.out.print("Test nr: "+count+" - ");
     }
 
-    @Test (expected = IndexOutOfBoundsException.class)
+    @Test
     public void testAddAt(){
+        exception.expect(IndexOutOfBoundsException.class);
         System.out.println("AddAt()");
         //Testing to add 55 between 7 and 8
         int addValue = 55;
@@ -34,6 +40,13 @@ public class ArrayIntListTest {
     }
 
     @Test
+    public void testAddHugeAmount() {
+        System.out.println("AddHugeAmount()");
+        ArrayIntList intList = addMany(10000000);
+        assertEquals(10000000, intList.size());
+    }
+
+    @Test
     public void testIndexOf(){
         System.out.println("IndexOf()");
         //testing to get index of a element
@@ -42,8 +55,9 @@ public class ArrayIntListTest {
         assertEquals(5, intList.indexOf(5));
     }
 
-    @Test (expected = IndexOutOfBoundsException.class)
+    @Test
     public void testRemoveNSize(){
+        exception.expect(IndexOutOfBoundsException.class);
         System.out.println("RemoveNSize()");
         //Creating a list and then removing.
         //The first-list size should not be equal to the removed-list size.
@@ -58,6 +72,7 @@ public class ArrayIntListTest {
 
     @Test
     public void testGet(){
+        exception.expect(IndexOutOfBoundsException.class);
         System.out.println("Get()");
         //testing to get the first element after adding it
         ArrayIntList intList = new ArrayIntList();
@@ -67,13 +82,7 @@ public class ArrayIntListTest {
 
 
         //Force exception(and catching it) with remove with an index that is out of bounds
-        boolean didCatch = false;
-        try {
-            intList.get(2);
-        }catch(IndexOutOfBoundsException e) {
-            didCatch = true;
-        }
-        assertTrue(didCatch);
+        intList.get(2);
 
     }
     @Test

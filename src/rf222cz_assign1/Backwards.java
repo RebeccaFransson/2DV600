@@ -1,4 +1,4 @@
-/**
+package rf222cz_assign1; /**
  * Created by ymafr on 2016-08-30.
  */
 
@@ -22,11 +22,5 @@ public class Backwards {
             System.err.println("Cannot be empty, enter text again: ");
             text = scan.nextLine (); // read text as a string again
         }
-
-        StringBuilder sb = new StringBuilder(text); //inmatade texten
-        sb.reverse();
-        System.out.println("Reversed text: "+sb.toString()); // print string
-
-
     }
 }
