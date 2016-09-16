@@ -26,17 +26,7 @@ public class FerryMain {
         ferry.embark(bus);
         ferry.embark(lorry);
 
-        //Max number of space and room for passengers
-        /*ferry.embark(new Bus(ferry.busSpace, 20));
-        ferry.embark(new Bus(ferry.busSpace, 20));
-        ferry.embark(new Bus(ferry.busSpace, 20));
-        ferry.embark(new Bus(ferry.busSpace, 20));
-        ferry.embark(new Bus(ferry.busSpace, 20));
-        ferry.embark(new Bus(ferry.busSpace, 20));
-        ferry.embark(new Bus(ferry.busSpace, 20));
-        ferry.embark(new Bus(ferry.busSpace, 20));
-        ferry.embark(new Bus(ferry.busSpace, 20));
-        ferry.embark(new Bus(ferry.busSpace, 20));*/
+
 
         System.out.println("---Emarking---");
         System.out.println(ferry.toString());
@@ -44,6 +34,19 @@ public class FerryMain {
 
         ferry.disembark();
         System.out.println("---Disembarking---");
+        System.out.println(ferry.toString());
+
+
+        //Max number of space and room for passengers
+        for (int i = 0; i < 39; i++){
+            ferry.embark(new Car(ferry.carSpace, 4));
+        }
+        for (int i = 0; i < 5; i++){
+            ferry.embark(new Bicycle(ferry.bicycleSpace));
+        }
+        ferry.embark(new Bicycle(ferry.bicycleSpace));//Couldnt go, lack of space
+
+        System.out.println("---Emarking second time---");
         System.out.println(ferry.toString());
     }
 }

@@ -8,8 +8,8 @@ import rf222cz_assign2.Exercise2_Ferry.Vehicle;
 public class Car extends Vehicle {
 
     public Car(int space, int passengers){
-        //cost = 200, passengerCost = 10, maxpassengers = 20
-        super(space, 200, passengers, 10, 20);//Calls the constructor in the parent-class - Vehicle
+        //cost = 200, passengerCost = 15, maxpassengers = 20
+        super(space, 200, passengers, 15, 20);//Calls the constructor in the parent-class - Vehicle
     }
 
     @Override

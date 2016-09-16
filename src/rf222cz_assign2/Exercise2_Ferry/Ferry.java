@@ -28,6 +28,7 @@ public class Ferry implements FerryInterface {
         passengers = new ArrayList<Passenger>();
         vehicles = new ArrayList<Vehicle>();
     }
+    private int remainingSpace(){return (maxFerrySpace - vehicleSpace)/carSpace; }
 
     @Override
     //Retuns the nr of passengers onborad
@@ -116,7 +117,7 @@ public class Ferry implements FerryInterface {
     //Writes out information about the ferry and is vehicles and passengers.
     //Remove comment to get more information
     public String toString() {
-        String ret = "Money: "+countMoney()+"\nSpace: "+vehicleSpace+"\nPassengers: "+countPassengers()+"\n";
+        String ret = "Money: "+countMoney()+"\nCar-space occupied: "+vehicleSpace/carSpace+"\nRemaining car-space: "+remainingSpace()+"\nPassengers: "+countPassengers()+"\n";
         Iterator<Vehicle> itr = iterator();
         while(itr.hasNext()) {
             ret += "["+itr.next().toString();
