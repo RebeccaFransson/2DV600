@@ -8,7 +8,7 @@ public class Word implements Comparable<Word>{
     private String word;
 
     public Word(String str) {
-        //...
+        this.word = str;
     }
     public String toString() {
         return word;
@@ -16,12 +16,13 @@ public class Word implements Comparable<Word>{
     @Override
     public int hashCode() {
         //"compute a hash value for word"
+        return this.word.hashCode();
     }
 
     @Override
     public boolean equals(Object other) {
         //"true if two words are equal"
-        return this.word.equals(other);
+        return this.word.toLowerCase().equals(other.toString().toLowerCase());
     }
 /** returns < 0 then the String calling the method is lexicographically first (comes first in a dictionary)
     returns == 0 then the two strings are lexicographically equivalent
