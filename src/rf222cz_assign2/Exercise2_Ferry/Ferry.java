@@ -1,7 +1,5 @@
 package rf222cz_assign2.Exercise2_Ferry;
 
-import rf222cz_assign1.Queue.Node;
-
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -10,25 +8,23 @@ import java.util.Iterator;
  */
 public class Ferry implements FerryInterface {
 
-    //Creates all the different spaces so that its easy to change
-    protected int bicycleSpace = 1;
-    protected int carSpace = bicycleSpace*5;
-    protected int busSpace = carSpace*4;
-    protected int lorrySpace = busSpace*2;
+    //Creates all the different spaces Iin one place so that its easy to change
+    protected int BICYKLE_SPACE = 1;
+    protected int CAR_SPACE = BICYKLE_SPACE *5;
+    protected int BUS_SPACE = CAR_SPACE *4;
+    protected int LORRY_SPACE = BUS_SPACE *2;
 
     private ArrayList<Passenger> passengers;
     private ArrayList<Vehicle> vehicles;
-    private int vehicleSpace = 0;
-    private int maxFerrySpace = carSpace * 40;
+    private int MAX_CAR_SPACE = CAR_SPACE * 40;
     private int money = 0;
-    private int maxPassengerRoom = 200;
+    private int MAX_PASSENGER_ROOM = 200;
 
     public Ferry(){
         //Creates new lists with passengers ans vehicles
         passengers = new ArrayList<Passenger>();
         vehicles = new ArrayList<Vehicle>();
     }
-    private int remainingSpace(){return (maxFerrySpace - vehicleSpace)/carSpace; }
 
     @Override
     //Retuns the nr of passengers onborad
@@ -39,7 +35,12 @@ public class Ferry implements FerryInterface {
     @Override
     //returns the used space on the ferry. Bicycle = 1 space and car = 5 spaces
     public int countVehicleSpace() {
-        return vehicleSpace;
+        //return vehicleSpace;
+        int count = 0;
+        for (Vehicle v : vehicles) {
+            count += v.space;
+        }
+        return count;
     }
 
     @Override
@@ -58,7 +59,6 @@ public class Ferry implements FerryInterface {
             System.err.println("Number of passengers cant be more than "+v.maxPassengers);
         }else{
             money += v.cost;
-            vehicleSpace += v.space;
             vehicles.add(v);
             for (Passenger p: v.getPassengers()) {
                 embark(p);
@@ -84,19 +84,18 @@ public class Ferry implements FerryInterface {
     public void disembark() {
         vehicles.clear();
         passengers.clear();
-        vehicleSpace = 0;
     }
 
     @Override
     //Check if there is space of the vehicle, and room for its passengers ans if the vehicle is already onbord
     public boolean hasSpaceFor(Vehicle v) {
-        return countVehicleSpace() + v.space <= maxFerrySpace && !vehicles.contains(v) && countPassengers() + v.passengers <= maxPassengerRoom;
+        return countVehicleSpace() + v.space <= MAX_CAR_SPACE && !vehicles.contains(v) && countPassengers() + v.passengers <= MAX_PASSENGER_ROOM;
     }
 
     @Override
     //Check if there is space of the vehicle, and room for its passengers ans if the vehicle is already onbord
     public boolean hasRoomFor(Passenger p) {
-        return countPassengers() < maxPassengerRoom && !passengers.contains(p);
+        return countPassengers() < MAX_PASSENGER_ROOM && !passengers.contains(p);
     }
 
     @Override
@@ -106,10 +105,6 @@ public class Ferry implements FerryInterface {
             public Vehicle next() {return vehicles.get(count++);}
 
             public boolean hasNext() {return count<vehicles.size();}
-
-            public void remove() {
-                throw new RuntimeException("remove() is not implemented");
-            }
         };
     }
 
@@ -117,7 +112,10 @@ public class Ferry implements FerryInterface {
     //Writes out information about the ferry and is vehicles and passengers.
     //Remove comment to get more information
     public String toString() {
-        String ret = "Money: "+countMoney()+"\nCar-space occupied: "+vehicleSpace/carSpace+"\nRemaining car-space: "+remainingSpace()+"\nPassengers: "+countPassengers()+"\n";
+        if(vehicles.isEmpty()){
+            return "The ferry is disembarked, eard money is: "+countMoney();
+        }
+        String ret = "Money: "+countMoney()+"\nCar-space occupied: "+countVehicleSpace()/ CAR_SPACE +"\nRemaining car-space: "+(MAX_CAR_SPACE - countVehicleSpace())/ CAR_SPACE +"\nPassengers: "+countPassengers()+"\n";
         Iterator<Vehicle> itr = iterator();
         while(itr.hasNext()) {
             ret += "["+itr.next().toString();

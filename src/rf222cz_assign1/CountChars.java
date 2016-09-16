@@ -15,8 +15,8 @@ public class CountChars {
     public static void main(String[] args) throws IOException {
 
         System.out.println("----Welcome to CountChars----");
-        String file = "C:\\Users\\ymafr\\IdeaProjects\\2DV600\\src\\rf222cz_assign1\\SergioGarciaBeatsTheAmericans.txt";
-        //String file = args[0];
+        //String file = "C:\\Users\\ymafr\\IdeaProjects\\2DV600\\src\\rf222cz_assign1\\SergioGarciaBeatsTheAmericans.txt";
+        String file = args[0];
 
         File text = new File(file);
         System.out.println("Reading file: " + text.getAbsolutePath());

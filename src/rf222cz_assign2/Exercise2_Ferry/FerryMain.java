@@ -13,10 +13,10 @@ public class FerryMain {
         Ferry ferry = new Ferry();
 
         //Sends parameter space and passengers
-        Bicycle bicycle = new Bicycle(ferry.bicycleSpace);
-        Car car = new Car(ferry.carSpace, 3);
-        Bus bus = new Bus(ferry.busSpace, 19);
-        Lorry lorry = new Lorry(ferry.lorrySpace, 1);
+        Bicycle bicycle = new Bicycle(ferry.BICYKLE_SPACE);
+        Car car = new Car(ferry.CAR_SPACE, 3);
+        Bus bus = new Bus(ferry.BUS_SPACE, 19);
+        Lorry lorry = new Lorry(ferry.LORRY_SPACE, 1);
         Passenger linda = new Passenger(20);
 
 
@@ -39,12 +39,12 @@ public class FerryMain {
 
         //Max number of space and room for passengers
         for (int i = 0; i < 39; i++){
-            ferry.embark(new Car(ferry.carSpace, 4));
+            ferry.embark(new Car(ferry.CAR_SPACE, 4));
         }
         for (int i = 0; i < 5; i++){
-            ferry.embark(new Bicycle(ferry.bicycleSpace));
+            ferry.embark(new Bicycle(ferry.BICYKLE_SPACE));
         }
-        ferry.embark(new Bicycle(ferry.bicycleSpace));//Couldnt go, lack of space
+        ferry.embark(new Bicycle(ferry.BICYKLE_SPACE));//Couldnt go, lack of space
 
         System.out.println("---Emarking second time---");
         System.out.println(ferry.toString());
