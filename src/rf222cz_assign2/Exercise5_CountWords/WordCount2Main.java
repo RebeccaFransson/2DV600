@@ -17,17 +17,19 @@ public class WordCount2Main {
             //For each line, split it into words, add the words to the two sets.
             while (sc.hasNext()){
                 for (String word : sc.nextLine().split("[\\s+]")){
-                    //if (!word.isEmpty())//With this on 349 words
-                    hws.add(new Word(word.toLowerCase()));//No lowercase then 366 words
-                    tws.add(new Word(word.toLowerCase()));
+                    if (!word.isEmpty()) {//With this on 349 words
+                        hws.add(new Word(word.toLowerCase()));//No lowercase then 366 words
+                        tws.add(new Word(word.toLowerCase()));
+                    }
                 }
             }
 
-            //Print size of the sets
+            //Print all in hashset
             System.out.println("Hashset size: "+hws.size()+"\nWords:");
             System.out.println(hws.toString());
 
             //Print the words from treeSet - alphabetical order
+            System.out.println("Treeset size: "+tws.size()+"\nWords:");
             System.out.println(tws.toString());
 
         }catch(FileNotFoundException e) {

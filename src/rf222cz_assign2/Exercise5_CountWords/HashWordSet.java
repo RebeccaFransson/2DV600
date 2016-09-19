@@ -26,13 +26,13 @@ public class HashWordSet implements WordSet {
 
             //Create new node for the new word
             Node newNode = new Node(word);
-            newNode.setNext(buckets[position]);
+            newNode.next = this.buckets[position];
 
             //Add word to set on given position
-            buckets[position] = newNode;
-            current = position;
-            size++;
-            if(size == buckets.length)
+            this.buckets[position] = newNode;
+            //current = position;
+            this.size++;
+            if(this.size == this.buckets.length)
                 rehash();
         }
     }
@@ -43,12 +43,13 @@ public class HashWordSet implements WordSet {
         //Get the hashValue to get which bucket
         int position = getBucketNumber(word);
 
-        Node currentNode = buckets[position];
+        Node currentNode = this.buckets[position];
         while (currentNode != null){
             //String nodeString = currentNode.getWord().toString();
-            if(currentNode.getWord().equals(word.toString()))
+            if(currentNode.value.equals(word.toString()))
                 return true;
-            currentNode = currentNode.next;
+            else
+                currentNode = currentNode.next;
         }
         return false;
     }
@@ -75,14 +76,14 @@ public class HashWordSet implements WordSet {
         if (hashCode < 0)
             hashCode = -hashCode;
 
-        return hashCode % buckets.length;
+        return hashCode % this.buckets.length;
     }
 
     //Code from lecture
     private void rehash() {
         Node[] temp = buckets; // Reference to old buckets
-        buckets = new Node[2*temp.length]; // New empty buckets
-        size = 0;
+        this.buckets = new Node[2*temp.length]; // New empty buckets
+        this.size = 0;
         for (Node n : temp) { // Insert old values into new buckets
             if (n == null) continue; // Empty bucket
             while (n != null) {
@@ -98,22 +99,23 @@ public class HashWordSet implements WordSet {
     }
 
     //Private Iterator class
+    //Code from lecture examples
     private class HashIterator implements Iterator<Word>{
-        int pos = 0;
-        Word[] words;
+        private int pos = 0;
+        private Word[] words;
 
         public HashIterator() {
 
             words = new Word[size];
             int n = 0;
-
+            //Creates new array with the words
             for (int i = 0; i < buckets.length; i++) {
 
                 Node node = buckets[i];
 
                 while (node != null) {
                     words[n++] = node.getWord();
-                    node = node.getNext();
+                    node = node.next;
                 }
             }
         }
@@ -124,10 +126,6 @@ public class HashWordSet implements WordSet {
 
         public Word next() {
             return words[pos++];
-        }
-
-        public void remove() {
-            throw new RuntimeException("remove() is not implemented");
         }
         /*private Node currentNode;
 
@@ -167,12 +165,8 @@ public class HashWordSet implements WordSet {
             return this.value;
         }
 
-        public void setNext(Node obj){
-            this.next = obj;
-        }
-
-        public Node getNext(){
+        /*public Node getNext(){
             return this.next;
-        }
+        }*/
     }
 }

@@ -18,7 +18,7 @@ public class TreeWordSet implements WordSet {
     public void add(Word w) {
         if(!contains(w)){
             if (root==null){
-                root = new BST(w);
+                root = new BST(root, w);
             }else{
                 root.add(w);
                 this.size++;
@@ -76,54 +76,79 @@ public class TreeWordSet implements WordSet {
         public Word next() {
             if (size <= 0)
                 throw new NullPointerException("Cant get iterators next object when no objects exists.");
-            return new Word("hej");
+            BST returnWord = next;
+
+            if(next.right != null){
+                next = next.right;
+
+                //Go to the word furthest left
+                while (next.left != null){
+                    next = next.left;
+                }
+                return returnWord.value;
+            }else{
+                while (next.parent != null){
+                    if(next.parent.left == next){
+                        next = next.parent;
+                        return returnWord.value;
+                    }
+                    next = next.parent;
+                }
+                next = null;
+                return returnWord.value;
+            }
+
         }
 
         public boolean hasNext() {
             if (size <= 0)
                 throw new NullPointerException("Cant get iterators hasNext object when no objects exists.");
-            return false;
+            return next != null;
         }
     }
 
     //Code from lecture slides
     private class BST { // private inner class
-        Word value;
-        private BST left = null;
-        private BST right = null;
+        private Word value;
+        private BST left;
+        private BST right;
+        private BST parent;
 
-        public BST(Word val) { value = val;}
+        public BST(BST parent, Word val) {
+            this.parent = parent;
+            this.value = val;
+        }
 
         public void add(Word w) {// recursive add
             //value comes before w
-            if (value.compareTo(w) > 0) { // add to left branch
-                if ( left == null)
-                    left = new BST(w);
+            if (this.value.compareTo(w) < 0) { // add to left branch
+                if (this.left == null)
+                    this.left = new BST(this, w);
                 else
-                    left .add(w);
+                    this.left.add(w);
             }
             //w comes before value
-            else if (value.compareTo(w) < 0) { // add to right branch
-                if ( right == null)
-                    right = new BST(w);
+            else if (this.value.compareTo(w) > 0) { // add to right branch
+                if (this.right == null)
+                    this.right = new BST(this, w);
                 else
-                    right .add(w);
+                    this.right.add(w);
             }
 
         }
 
         public boolean contains(Word w) { // recursive look−up
-            if (value.compareTo(w) > 0) { // search left branch
-                if (left == null)
+            if (this.value.compareTo(w) > 0) { // search left branch
+                if (this.left == null)
                     return false;
                 else
-                    return left.contains(w);
+                    return this.left.contains(w);
             }
-            else if (value.compareTo(w) > 0) { // search right branch
-                if (right == null)
+            else if (this.value.compareTo(w) > 0) { // search right branch
+                if (this.right == null)
                     return false;
                 else
-                    return right.contains(w);
+                    return this.right.contains(w);
             }
             return true; // Found!
         }
