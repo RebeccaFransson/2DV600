@@ -20,6 +20,7 @@ public class HashWordSet implements WordSet {
     // Add word if not already added
     public void add(Word word) {
         if (!contains(word)) {
+
             //Get the hashValue to get which bucket
             int position = getBucketNumber(word);
 
@@ -34,8 +35,6 @@ public class HashWordSet implements WordSet {
             if(size == buckets.length)
                 rehash();
         }
-
-
     }
 
     @Override
@@ -46,7 +45,8 @@ public class HashWordSet implements WordSet {
 
         Node currentNode = buckets[position];
         while (currentNode != null){
-            if(currentNode.getWord().equals(word))
+            //String nodeString = currentNode.getWord().toString();
+            if(currentNode.getWord().equals(word.toString()))
                 return true;
             currentNode = currentNode.next;
         }
@@ -90,7 +90,6 @@ public class HashWordSet implements WordSet {
                 n = n.next;
             }
         }
-
     }
 
     @Override
@@ -100,7 +99,37 @@ public class HashWordSet implements WordSet {
 
     //Private Iterator class
     private class HashIterator implements Iterator<Word>{
-        private Node currentNode;
+        int pos = 0;
+        Word[] words;
+
+        public HashIterator() {
+
+            words = new Word[size];
+            int n = 0;
+
+            for (int i = 0; i < buckets.length; i++) {
+
+                Node node = buckets[i];
+
+                while (node != null) {
+                    words[n++] = node.getWord();
+                    node = node.getNext();
+                }
+            }
+        }
+
+        public boolean hasNext() {
+            return pos < words.length;
+        }
+
+        public Word next() {
+            return words[pos++];
+        }
+
+        public void remove() {
+            throw new RuntimeException("remove() is not implemented");
+        }
+        /*private Node currentNode;
 
         //constructor
         public HashIterator(){
@@ -108,7 +137,7 @@ public class HashWordSet implements WordSet {
         }
 
         public Word next() {
-            if (size <= 0)
+            if (size == 0)
                 throw new NullPointerException("Cant get iterators next object when no objects exists.");
 
             Node ret = currentNode;
@@ -117,11 +146,11 @@ public class HashWordSet implements WordSet {
         }
 
         public boolean hasNext() {
-            if (size <= 0)
+            if (size == 0)
                 throw new NullPointerException("Cant get iterators hasNext object when no objects exists.");
 
             return currentNode != null;
-        }
+        }*/
     }
 
     //Private inner linked list class

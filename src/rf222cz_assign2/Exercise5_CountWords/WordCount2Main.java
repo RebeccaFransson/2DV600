@@ -2,7 +2,6 @@ package rf222cz_assign2.Exercise5_CountWords;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.Iterator;
 import java.util.Scanner;
 
 /**
@@ -13,19 +12,23 @@ public class WordCount2Main {
         String words = "C:\\Users\\ymafr\\OneDrive\\Dokument\\GitHub\\2DV600\\src\\rf222cz_assign2\\Exercise5_CountWords\\Words.txt";
 
         try(Scanner sc = new Scanner(new File(words))) {
-            HashWordSet hws = new HashWordSet(7);
+            HashWordSet hws = new HashWordSet(10);
+            TreeWordSet tws = new TreeWordSet();
             //For each line, split it into words, add the words to the two sets.
             while (sc.hasNext()){
-                String line = sc.nextLine();
-                for (String word : line.split(" +")){
-                    if (!word.isEmpty())
-                        hws.add(new Word(word));
+                for (String word : sc.nextLine().split("[\\s+]")){
+                    //if (!word.isEmpty())//With this on 349 words
+                    hws.add(new Word(word.toLowerCase()));//No lowercase then 366 words
+                    tws.add(new Word(word.toLowerCase()));
                 }
             }
+
             //Print size of the sets
+            System.out.println("Hashset size: "+hws.size()+"\nWords:");
             System.out.println(hws.toString());
-            System.out.println("size: "+hws.size());
+
             //Print the words from treeSet - alphabetical order
+            System.out.println(tws.toString());
 
         }catch(FileNotFoundException e) {
             System.err.println("Couldn't find file");
