@@ -1,7 +1,6 @@
 package rf222cz_assign2.Exercise5_CountWords;
 
 import java.util.Iterator;
-import java.util.NoSuchElementException;
 
 /**
  * Created by ymafr on 2016-09-16.
@@ -20,9 +19,7 @@ public class HashWordSet implements WordSet {
     @Override
     // Add word if not already added
     public void add(Word word) {
-        if (contains(word)) {
-            //System.err.println("'"+word.toString()+"' is already in the hash set.");
-        }else{
+        if (!contains(word)) {
             //Get the hashValue to get which bucket
             int position = getBucketNumber(word);
 
@@ -104,7 +101,6 @@ public class HashWordSet implements WordSet {
     //Private Iterator class
     private class HashIterator implements Iterator<Word>{
         private Node currentNode;
-        //private int position = 0;
 
         //constructor
         public HashIterator(){
@@ -114,17 +110,16 @@ public class HashWordSet implements WordSet {
         public Word next() {
             if (size <= 0)
                 throw new NullPointerException("Cant get iterators next object when no objects exists.");
-            //if(currentNode)
+
             Node ret = currentNode;
             currentNode = currentNode.getNext();
             return ret.getWord();
-            //return currentNode.next.getWord();
         }
 
         public boolean hasNext() {
             if (size <= 0)
                 throw new NullPointerException("Cant get iterators hasNext object when no objects exists.");
-            //return buckets.length > size;
+
             return currentNode != null;
         }
     }

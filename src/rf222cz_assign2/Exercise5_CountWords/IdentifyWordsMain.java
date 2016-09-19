@@ -17,8 +17,8 @@ public class IdentifyWordsMain {
             System.err.println("The program needs a filename to run");
             System.exit(1);
         }*/
-
         readAndWrite(file, words);
+
 
     }
 
@@ -32,7 +32,7 @@ public class IdentifyWordsMain {
                     String line = sc.nextLine();
                     //replaceAll 1 Translate hyphen words into two words.
                     //replaceAll 2 And keep only words with a-z
-                    out.write(line.replaceAll("[\\-]", " ").replaceAll("[']*[^a-zA-Z\\s]", "") + "\n");
+                    out.write(line.replaceAll("[']*[^a-zA-Z\\s]", "") + "\n");
                 }
             }
         }catch(FileNotFoundException e) {
