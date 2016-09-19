@@ -5,7 +5,7 @@ import java.util.Iterator;
 /**
  * Created by ymafr on 2016-09-16.
  */
-public class Queue implements QueueInterface {
+public class Queue<E> implements QueueInterface<E> {
     private int size = 0;
     private Node head = null;
     private Node tail = null;
@@ -21,7 +21,7 @@ public class Queue implements QueueInterface {
     }
 
     @Override
-    public void enqueue(Object element) {
+    public void enqueue(E element) {
         if (head == null) { // Add first element
             head = new Node(element);
             tail = head;
@@ -34,7 +34,7 @@ public class Queue implements QueueInterface {
     }
 
     @Override
-    public Object dequeue() {
+    public E dequeue() {
         if (isEmpty())
             throw new IndexOutOfBoundsException("Cant remove a object when no objects exists.");
         Node remove = head;
@@ -44,14 +44,14 @@ public class Queue implements QueueInterface {
     }
 
     @Override
-    public Object first() {
+    public E first() {
         if (isEmpty())
             throw new IndexOutOfBoundsException("Cant return first object when no objects exists.");
         return head.getObject();
     }
 
     @Override
-    public Object last() {
+    public E last() {
         if (isEmpty())
             throw new IndexOutOfBoundsException("Cant return last object when no objects exists.");
         return tail.getObject();
@@ -82,18 +82,14 @@ public class Queue implements QueueInterface {
     private class Node{
         //Create a new node class
         public Node next = null;
-        private Object value;
+        private E value;
 
-        public Node(Object obj){
+        public Node(E obj){
             value = obj;
         }
 
-        public Object getObject(){
+        public E getObject(){
             return value;
-        }
-
-        public void setNext(Node obj){
-            next = obj;
         }
 
         public Node getNext(){

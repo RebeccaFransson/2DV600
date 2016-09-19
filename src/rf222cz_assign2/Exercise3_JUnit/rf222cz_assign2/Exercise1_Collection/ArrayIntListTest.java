@@ -1,5 +1,6 @@
 package rf222cz_assign2.Exercise3_JUnit.rf222cz_assign2.Exercise1_Collection;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -35,7 +36,7 @@ public class ArrayIntListTest {
         //Getting it soo se if its equal to the addValue
         assertEquals(addValue, intList.get(7));
 
-        //Force exception with remove with an index that is out of bounds
+        //Force exception with addat with an index that is out of bounds
         intList.addAt(20, 20);
     }
 
