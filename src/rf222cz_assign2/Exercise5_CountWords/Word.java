@@ -13,12 +13,12 @@ public class Word implements Comparable<Word>{
     public String toString() {
         return word;
     }
+
     @Override
     public int hashCode() {
-        //"compute a hash value for word"
-        int hash = 7;
-        for (int i = 0; i < word.length(); i++) {
-            hash = hash*31 + Character.getNumericValue(i);
+        int hash = 0;
+        for (char c : this.word.toCharArray()){
+            hash += (int)c;
         }
         return hash;
     }

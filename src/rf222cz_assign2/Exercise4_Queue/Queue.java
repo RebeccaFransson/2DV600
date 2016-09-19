@@ -61,7 +61,7 @@ public class Queue<E> implements QueueInterface<E> {
         return new Iterator() {
             private Node h = head;
 
-            public Object next() {
+            public E next() {
                 if (isEmpty())
                     throw new NullPointerException("Cant get iterators next object when no objects exists.");
 
@@ -84,8 +84,8 @@ public class Queue<E> implements QueueInterface<E> {
         public Node next = null;
         private E value;
 
-        public Node(E obj){
-            value = obj;
+        public Node(E element){
+            value = element;
         }
 
         public E getObject(){

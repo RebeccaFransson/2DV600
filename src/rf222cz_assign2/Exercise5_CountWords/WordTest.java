@@ -53,7 +53,7 @@ public class WordTest {
 
     @Test
     public void testHashCode(){
-        Word w = new Word("hello");
+        Word w = new Word("Hello");
         Word w2 = new Word("loelh");
 
         assertEquals(w.hashCode(), w2.hashCode());

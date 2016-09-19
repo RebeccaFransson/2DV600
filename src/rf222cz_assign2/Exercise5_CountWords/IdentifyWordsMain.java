@@ -1,6 +1,7 @@
 package rf222cz_assign2.Exercise5_CountWords;
 
 import java.io.*;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 /**
@@ -16,7 +17,9 @@ public class IdentifyWordsMain {
             System.err.println("The program needs a filename to run");
             System.exit(1);
         }*/
+
         readAndWrite(file, words);
+
     }
 
     public static void readAndWrite(String readFrom, String writeTo){
