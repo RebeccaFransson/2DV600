@@ -27,7 +27,20 @@ public class Word implements Comparable<Word>{
     //TODO: need to be same instance?
     public boolean equals(Object other) {
         //"true if two words are equal"
-        return this.word.toLowerCase().equals(other.toString().toLowerCase());
+        //Both returns works
+        //return this.word.toLowerCase().equals(other.toString().toLowerCase());
+        if (other instanceof Word) {
+            Word w = (Word) other;
+            String str = w.toString();
+            if (str.length() == this.word.length()) {
+                for (int i=0;i<str.length();i++) {
+                    if (str.charAt(i) != this.word.charAt(i))
+                        return false;
+                }
+                return true;
+            }
+        }
+        return false;
     }
 /** returns < 0 then the String calling the method is lexicographically first (comes first in a dictionary)
     returns == 0 then the two strings are lexicographically equivalent

@@ -21,7 +21,6 @@ public class TreeWordSet implements WordSet {
                 root = new BST(root, w);
             }else{
                 root.add(w);
-                this.size++;
             }
         }
     }
@@ -38,6 +37,7 @@ public class TreeWordSet implements WordSet {
     public int size() {
         return this.size;
     }
+
 
     @Override
     public String toString() {
@@ -85,17 +85,17 @@ public class TreeWordSet implements WordSet {
                 while (next.left != null){
                     next = next.left;
                 }
-                return returnWord.value;
+                return returnWord.word;
             }else{
                 while (next.parent != null){
                     if(next.parent.left == next){
                         next = next.parent;
-                        return returnWord.value;
+                        return returnWord.word;
                     }
                     next = next.parent;
                 }
                 next = null;
-                return returnWord.value;
+                return returnWord.word;
             }
 
         }
@@ -109,42 +109,45 @@ public class TreeWordSet implements WordSet {
 
     //Code from lecture slides
     private class BST { // private inner class
-        private Word value;
+        private Word word;
         private BST left;
         private BST right;
         private BST parent;
 
         public BST(BST parent, Word val) {
+            //Add the size every time new branch is created
             this.parent = parent;
-            this.value = val;
+            this.word = val;
+            size++;
         }
 
         public void add(Word w) {// recursive add
-            //value comes before w
-            if (this.value.compareTo(w) < 0) { // add to left branch
+            //word comes before w
+            if (this.word.compareTo(w) > 0) { // add to left branch
                 if (this.left == null)
                     this.left = new BST(this, w);
                 else
                     this.left.add(w);
             }
-            //w comes before value
-            else if (this.value.compareTo(w) > 0) { // add to right branch
+            //w comes before word
+            else if (this.word.compareTo(w) < 0) { // add to right branch
                 if (this.right == null)
                     this.right = new BST(this, w);
                 else
                     this.right.add(w);
+
             }
 
         }
 
         public boolean contains(Word w) { // recursive look−up
-            if (this.value.compareTo(w) > 0) { // search left branch
+            if (this.word.compareTo(w) < 0) { // search left branch
                 if (this.left == null)
                     return false;
                 else
                     return this.left.contains(w);
             }
-            else if (this.value.compareTo(w) > 0) { // search right branch
+            else if (this.word.compareTo(w) > 0) { // search right branch
                 if (this.right == null)
                     return false;
                 else
@@ -152,6 +155,7 @@ public class TreeWordSet implements WordSet {
             }
             return true; // Found!
         }
+
     }
 
 }

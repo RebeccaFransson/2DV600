@@ -46,7 +46,7 @@ public class HashWordSet implements WordSet {
         Node currentNode = this.buckets[position];
         while (currentNode != null){
             //String nodeString = currentNode.getWord().toString();
-            if(currentNode.value.equals(word.toString()))
+            if(currentNode.value.equals(word))
                 return true;
             else
                 currentNode = currentNode.next;

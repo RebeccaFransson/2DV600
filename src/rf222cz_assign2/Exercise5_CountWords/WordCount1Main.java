@@ -28,7 +28,7 @@ public class WordCount1Main {
             }
             //Print the words from treeSet - alphabetical order
             for (Word w : tree) {
-                System.out.println(w.toString());
+                System.out.println("'"+w.toString()+"'");
             }
 
             //Print size of the sets
