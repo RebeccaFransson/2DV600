@@ -4,7 +4,7 @@
  * Author: Jonas Lundberg
  */
 
-package da1031;
+package rf222cz_assign2.da1031;
 
 import java.lang.IndexOutOfBoundsException;
 

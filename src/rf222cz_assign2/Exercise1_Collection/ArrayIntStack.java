@@ -1,9 +1,11 @@
 package rf222cz_assign2.Exercise1_Collection;
 
+import rf222cz_assign2.da1031.IntStack;
+
 /**
  * Created by ymafr on 2016-09-13.
  */
-public class ArrayIntStack extends da1031.AbstractIntCollection implements da1031.IntStack {
+public class ArrayIntStack extends rf222cz_assign2.da1031.AbstractIntCollection implements IntStack {
 
     //Pushes in a element first in the list
     @Override

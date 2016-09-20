@@ -64,14 +64,15 @@ public class HashWordSet implements WordSet {
     @Override
     public String toString(){
         /**Writes out in array-like way [ 'word' 'word' 'word']*/
-        /*String ret = "[";
+        String ret = "[";
         Iterator<Word> itr = iterator();
-        while (itr.hasNext()){
-            ret += " '"+itr.next().toString()+"' ";
+        while (itr.hasNext()) {
+            ret += " '" + itr.next().toString() + "' ";
         }
-        return ret+"]";*/
+
+        return ret+"]";
         /**Writes out in its buckets*/
-        StringBuffer buf = new StringBuffer();
+        /*StringBuffer buf = new StringBuffer();
         for (int i=0;i<buckets.length;i++) {
             Node node = buckets[i];
             if (node == null) continue;
@@ -82,7 +83,7 @@ public class HashWordSet implements WordSet {
             }
             buf.append("\n");
         }
-        return buf.toString();
+        return buf.toString();*/
     }
 
     //Gets the hashcode and modelus with it to get bucketnumber
@@ -136,10 +137,14 @@ public class HashWordSet implements WordSet {
         }
 
         public boolean hasNext() {
+            if (size <= 0)
+                throw new NullPointerException("Cant get iterators hasNext() word when hashset is empty.");
             return pos < words.length;
         }
 
         public Word next() {
+            if (size <= 0)
+                throw new NullPointerException("Cant get iterators next() word when hashset is empty.");
             return words[pos++];
         }
     }

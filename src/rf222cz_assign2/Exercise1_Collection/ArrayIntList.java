@@ -1,11 +1,11 @@
 package rf222cz_assign2.Exercise1_Collection;
 
-import da1031.AbstractIntCollection;
+import rf222cz_assign2.da1031.IntList;
 
 /**
  * Created by ymafr on 2016-09-13.
  */
-public class ArrayIntList extends da1031.AbstractIntCollection implements da1031.IntList {
+public class ArrayIntList extends rf222cz_assign2.da1031.AbstractIntCollection implements IntList {
 
     //Adds a element to the list
     @Override
