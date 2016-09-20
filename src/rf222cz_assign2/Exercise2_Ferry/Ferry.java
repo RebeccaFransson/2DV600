@@ -8,7 +8,7 @@ import java.util.Iterator;
  */
 public class Ferry implements FerryInterface {
 
-    //Creates all the different spaces Iin one place so that its easy to change
+    //Creates all the different spaces in one place so that its easy to change
     protected int BICYKLE_SPACE = 1;
     protected int CAR_SPACE = BICYKLE_SPACE *5;
     protected int BUS_SPACE = CAR_SPACE *4;
@@ -21,21 +21,20 @@ public class Ferry implements FerryInterface {
     private int MAX_PASSENGER_ROOM = 200;
 
     public Ferry(){
-        //Creates new lists with passengers ans vehicles
+        //Creates new lists with passengers and vehicles
         passengers = new ArrayList<Passenger>();
         vehicles = new ArrayList<Vehicle>();
     }
 
+    //Returns the nr of passengers on bord the ferry
     @Override
-    //Retuns the nr of passengers onborad
     public int countPassengers() {
         return passengers.size();
     }
 
-    @Override
     //returns the used space on the ferry. Bicycle = 1 space and car = 5 spaces
+    @Override
     public int countVehicleSpace() {
-        //return vehicleSpace;
         int count = 0;
         for (Vehicle v : vehicles) {
             count += v.space;
@@ -43,14 +42,14 @@ public class Ferry implements FerryInterface {
         return count;
     }
 
-    @Override
     //Returns the earned money
+    @Override
     public int countMoney() {
         return money;
     }
 
-    @Override
     //Adds a new vehicle to the list
+    @Override
     public void embark(Vehicle v) {
         //Check if there is enough space on ferry or the vehicle is already on the ferry
         if(!hasSpaceFor(v)) {
@@ -67,8 +66,8 @@ public class Ferry implements FerryInterface {
 
     }
 
-    @Override
     //Adds new passenger to the list
+    @Override
     public void embark(Passenger p) {
         //Check if there is enough space on ferry or the passenger is already on the ferry
         if(!hasRoomFor(p)){
@@ -79,21 +78,21 @@ public class Ferry implements FerryInterface {
         }
     }
 
-    @Override
     //Clearing the Ferry
+    @Override
     public void disembark() {
         vehicles.clear();
         passengers.clear();
     }
 
-    @Override
     //Check if there is space of the vehicle, and room for its passengers ans if the vehicle is already onbord
+    @Override
     public boolean hasSpaceFor(Vehicle v) {
         return countVehicleSpace() + v.space <= MAX_CAR_SPACE && !vehicles.contains(v) && countPassengers() + v.passengers <= MAX_PASSENGER_ROOM;
     }
 
-    @Override
     //Check if there is space of the vehicle, and room for its passengers ans if the vehicle is already onbord
+    @Override
     public boolean hasRoomFor(Passenger p) {
         return countPassengers() < MAX_PASSENGER_ROOM && !passengers.contains(p);
     }
@@ -108,12 +107,12 @@ public class Ferry implements FerryInterface {
         };
     }
 
-    @Override
     //Writes out information about the ferry and is vehicles and passengers.
     //Remove comment to get more information
+    @Override
     public String toString() {
         if(vehicles.isEmpty()){
-            return "The ferry is disembarked, eard money is: "+countMoney();
+            return "The ferry is disembarked, eard money is: "+countMoney()+":-";
         }
         String ret = "Money: "+countMoney()+"\nCar-space occupied: "+countVehicleSpace()/ CAR_SPACE +"\nRemaining car-space: "+(MAX_CAR_SPACE - countVehicleSpace())/ CAR_SPACE +"\nPassengers: "+countPassengers()+"\n";
         Iterator<Vehicle> itr = iterator();

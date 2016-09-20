@@ -9,8 +9,6 @@ import java.util.Scanner;
  */
 public class IdentifyWordsMain {
     public static void main(String[] args) {
-
-        //String file = "C:\\Users\\ymafr\\OneDrive\\Dokument\\GitHub\\2DV600\\src\\rf222cz_assign2\\Exercise5_CountWords\\HistoryOfProgramming.txt";
         String words = "C:\\Users\\ymafr\\OneDrive\\Dokument\\GitHub\\2DV600\\src\\rf222cz_assign2\\Exercise5_CountWords\\Words.txt";
 
         if(args.length == 0){

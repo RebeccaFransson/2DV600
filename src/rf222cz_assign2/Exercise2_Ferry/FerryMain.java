@@ -44,9 +44,14 @@ public class FerryMain {
         for (int i = 0; i < 5; i++){
             ferry.embark(new Bicycle(ferry.BICYKLE_SPACE));
         }
-        ferry.embark(new Bicycle(ferry.BICYKLE_SPACE));//Couldnt go, lack of space
+        ferry.embark(new Bicycle(ferry.BICYKLE_SPACE));//Couldnt go on, lack of space
 
         System.out.println("---Emarking second time---");
         System.out.println(ferry.toString());
+
+        ferry.disembark();
+        System.out.println("---Disembarking second time---");
+        System.out.println(ferry.toString());
+
     }
 }

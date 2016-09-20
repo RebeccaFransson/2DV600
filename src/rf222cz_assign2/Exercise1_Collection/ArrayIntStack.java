@@ -5,6 +5,7 @@ package rf222cz_assign2.Exercise1_Collection;
  */
 public class ArrayIntStack extends da1031.AbstractIntCollection implements da1031.IntStack {
 
+    //Pushes in a element first in the list
     @Override
     public void push(int n) {
         for (int i = size(); i > 0; i--){
@@ -16,6 +17,7 @@ public class ArrayIntStack extends da1031.AbstractIntCollection implements da103
             resize();
     }
 
+    //Taking out the first element in the list and removes it
     @Override
     public int pop() throws IndexOutOfBoundsException {
         if(isEmpty()){
@@ -29,6 +31,7 @@ public class ArrayIntStack extends da1031.AbstractIntCollection implements da103
         return remove;
     }
 
+    //Takes out the first element in the list, does NOT remove it
     @Override
     public int peek() throws IndexOutOfBoundsException {
         if(isEmpty()){

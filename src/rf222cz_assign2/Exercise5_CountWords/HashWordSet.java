@@ -9,15 +9,14 @@ public class HashWordSet implements WordSet {
 
     private int size;
     private Node[] buckets;
-    private int current;
 
     public HashWordSet(int bucketsLength) {
         this.buckets = new Node[bucketsLength];
         this.size = 0;
     }
 
-    @Override
     // Add word if not already added
+    @Override
     public void add(Word word) {
         if (!contains(word)) {
 
@@ -37,8 +36,8 @@ public class HashWordSet implements WordSet {
         }
     }
 
-    @Override
     // Return true if word contained
+    @Override
     public boolean contains(Word word) {
         //Get the hashValue to get which bucket
         int position = getBucketNumber(word);
@@ -54,14 +53,15 @@ public class HashWordSet implements WordSet {
         return false;
     }
 
-    @Override
     // Return current set size
+    @Override
     public int size() {
         return this.size;
     }
 
-    //@Override
     // Print contained words
+    //Code from lecture
+    @Override
     public String toString(){
         /**Writes out in array-like way [ 'word' 'word' 'word']*/
         /*String ret = "[";
@@ -85,6 +85,7 @@ public class HashWordSet implements WordSet {
         return buf.toString();
     }
 
+    //Gets the hashcode and modelus with it to get bucketnumber
     private int getBucketNumber(Word w) {
         int hashCode = w.hashCode();
         if (hashCode < 0)
@@ -141,33 +142,10 @@ public class HashWordSet implements WordSet {
         public Word next() {
             return words[pos++];
         }
-        /*private Node currentNode;
-
-        //constructor
-        public HashIterator(){
-            currentNode = buckets[current];
-        }
-
-        public Word next() {
-            if (size == 0)
-                throw new NullPointerException("Cant get iterators next object when no objects exists.");
-
-            Node ret = currentNode;
-            currentNode = currentNode.getNext();
-            return ret.getWord();
-        }
-
-        public boolean hasNext() {
-            if (size == 0)
-                throw new NullPointerException("Cant get iterators hasNext object when no objects exists.");
-
-            return currentNode != null;
-        }*/
     }
 
     //Private inner linked list class
     private class Node{
-        //Create a new node class
         public Node next = null;
         private Word value;
 
@@ -178,9 +156,5 @@ public class HashWordSet implements WordSet {
         public Word getWord(){
             return this.value;
         }
-
-        /*public Node getNext(){
-            return this.next;
-        }*/
     }
 }

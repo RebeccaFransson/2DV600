@@ -16,8 +16,8 @@ public class WordCount1Main {
 
         try(Scanner sc = new Scanner(new File(words))) {
             //Creates empty sets
-            Set<Word> tree = new TreeSet<Word>();
-            Set<Word> hash = new HashSet<Word>();
+            Set<Word> tree = new TreeSet<>();
+            Set<Word> hash = new HashSet<>();
             //For each line, split it into words, add the words to the two sets.
             while (sc.hasNext()){
                 for (String word : sc.nextLine().split("[\\s+]")){

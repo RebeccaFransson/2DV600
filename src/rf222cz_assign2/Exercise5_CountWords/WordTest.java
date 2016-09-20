@@ -21,7 +21,7 @@ public class WordTest {
     public void testEquals() {
         System.out.println("testEquals()");
         Word w = new Word("hello");
-        assertTrue(w.equals(new Word("HELLO")));
+        assertFalse(w.equals(new Word("HELLO")));
     }
 
     @Test
@@ -54,7 +54,7 @@ public class WordTest {
     @Test
     public void testHashCode(){
         Word w = new Word("Hello");
-        Word w2 = new Word("loelh");
+        Word w2 = new Word("Hello");
 
         assertEquals(w.hashCode(), w2.hashCode());
     }

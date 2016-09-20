@@ -7,6 +7,7 @@ import da1031.AbstractIntCollection;
  */
 public class ArrayIntList extends da1031.AbstractIntCollection implements da1031.IntList {
 
+    //Adds a element to the list
     @Override
     public void add(int n) {
         values[size()] = n;
@@ -15,6 +16,7 @@ public class ArrayIntList extends da1031.AbstractIntCollection implements da1031
             resize();
     }
 
+    //Adds a element on a specific spot in the list
     @Override
     public void addAt(int n, int index) throws IndexOutOfBoundsException {
         if(!checkIndex(index, size()) || isEmpty()){
@@ -29,6 +31,7 @@ public class ArrayIntList extends da1031.AbstractIntCollection implements da1031
         values[index] = n;
     }
 
+    //Removes the element with the index and moves all the elements a step back
     @Override
     public void remove(int index) throws IndexOutOfBoundsException {
         if(!checkIndex(index, size()) || isEmpty()){
@@ -40,6 +43,7 @@ public class ArrayIntList extends da1031.AbstractIntCollection implements da1031
         size--;
     }
 
+    //Returns the element with specific index
     @Override
     public int get(int index) throws IndexOutOfBoundsException {
         if(!checkIndex(index, size()) || isEmpty()){
@@ -53,6 +57,7 @@ public class ArrayIntList extends da1031.AbstractIntCollection implements da1031
         return size == 0;
     }
 
+    //Get the index of an element
     @Override
     public int indexOf(int n) {
         int ret = -1;
