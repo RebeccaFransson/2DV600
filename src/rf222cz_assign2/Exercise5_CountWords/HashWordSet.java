@@ -63,12 +63,26 @@ public class HashWordSet implements WordSet {
     //@Override
     // Print contained words
     public String toString(){
-        String ret = "[";
+        /**Writes out in array-like way [ 'word' 'word' 'word']*/
+        /*String ret = "[";
         Iterator<Word> itr = iterator();
         while (itr.hasNext()){
             ret += " '"+itr.next().toString()+"' ";
         }
-        return ret+"]";
+        return ret+"]";*/
+        /**Writes out in its buckets*/
+        StringBuffer buf = new StringBuffer();
+        for (int i=0;i<buckets.length;i++) {
+            Node node = buckets[i];
+            if (node == null) continue;
+            buf.append("Bucket "+i);
+            while (node != null) {
+                buf.append(" - "+node.value);
+                node = node.next;
+            }
+            buf.append("\n");
+        }
+        return buf.toString();
     }
 
     private int getBucketNumber(Word w) {

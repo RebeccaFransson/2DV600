@@ -16,11 +16,13 @@ public class Word implements Comparable<Word>{
 
     @Override
     public int hashCode() {
-        int hash = 0;
+        /*int hash = 0;
         for (char c : this.word.toCharArray()){
             hash += (int)c;
         }
-        return hash;
+        return hash;*/
+        //Föreläsaren tyckte man skulle använda javas biblotek
+        return this.word.hashCode();
     }
 
     @Override

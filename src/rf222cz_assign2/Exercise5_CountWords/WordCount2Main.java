@@ -12,16 +12,16 @@ public class WordCount2Main {
         String words = "C:\\Users\\ymafr\\OneDrive\\Dokument\\GitHub\\2DV600\\src\\rf222cz_assign2\\Exercise5_CountWords\\Words.txt";
 
         try(Scanner sc = new Scanner(new File(words))) {
-            HashWordSet hws = new HashWordSet(10);
+            HashWordSet hws = new HashWordSet(10);//Put in the length of the buckets
             TreeWordSet tws = new TreeWordSet();
 
             //For each line, split it into words, add the words to the two sets.
             while (sc.hasNext()){
                 for (String word : sc.nextLine().split("[\\s+]")){
-                    //if (!word.isEmpty()) {//With this on 349 words
-                        hws.add(new Word(word.toLowerCase()));//No lowercase then 366 words
+                    if (!word.isEmpty()) {
+                        hws.add(new Word(word.toLowerCase()));
                         tws.add(new Word(word.toLowerCase()));
-                    //}
+                    }
                 }
             }
 

@@ -10,16 +10,14 @@ import java.util.Scanner;
 public class IdentifyWordsMain {
     public static void main(String[] args) {
 
-        String file = "C:\\Users\\ymafr\\OneDrive\\Dokument\\GitHub\\2DV600\\src\\rf222cz_assign2\\Exercise5_CountWords\\HistoryOfProgramming.txt";
+        //String file = "C:\\Users\\ymafr\\OneDrive\\Dokument\\GitHub\\2DV600\\src\\rf222cz_assign2\\Exercise5_CountWords\\HistoryOfProgramming.txt";
         String words = "C:\\Users\\ymafr\\OneDrive\\Dokument\\GitHub\\2DV600\\src\\rf222cz_assign2\\Exercise5_CountWords\\Words.txt";
 
-        /*if(args.length == 0){
+        if(args.length == 0){
             System.err.println("The program needs a filename to run");
             System.exit(1);
-        }*/
-        readAndWrite(file, words);
-
-
+        }
+        readAndWrite(args[0], words);
     }
 
     public static void readAndWrite(String readFrom, String writeTo){
@@ -30,9 +28,9 @@ public class IdentifyWordsMain {
                 System.out.println("writing to file: " + writeTo);
                 while(sc.hasNextLine()) {
                     String line = sc.nextLine();
-                    //replaceAll 1 Translate hyphen words into two words.
+                    //replaceAll 1 removes the character after numbers (there is a 1940s in the text)
                     //replaceAll 2 And keep only words with a-z
-                    out.write(line.replaceAll("[']*[^a-zA-Z\\s]", "") + "\n");
+                    out.write(line.replaceAll("[a-z]*$", "").replaceAll("[^A-Za-z\\s]+", ""));
                 }
             }
         }catch(FileNotFoundException e) {

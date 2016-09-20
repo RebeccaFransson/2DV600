@@ -137,6 +137,7 @@ public class TreeWordSet implements WordSet {
                     this.right.add(w);
 
             }
+            //FOund the word - do noting
 
         }
 

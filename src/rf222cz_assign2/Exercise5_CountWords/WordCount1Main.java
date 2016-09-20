@@ -20,17 +20,17 @@ public class WordCount1Main {
             Set<Word> hash = new HashSet<Word>();
             //For each line, split it into words, add the words to the two sets.
             while (sc.hasNext()){
-
                 for (String word : sc.nextLine().split("[\\s+]")){
-                    hash.add(new Word(word.toLowerCase()));
-                    tree.add(new Word(word.toLowerCase()));
+                    if(!word.isEmpty()){
+                        hash.add(new Word(word.toLowerCase()));
+                        tree.add(new Word(word.toLowerCase()));
+                    }
                 }
             }
             //Print the words from treeSet - alphabetical order
             for (Word w : tree) {
                 System.out.println("'"+w.toString()+"'");
             }
-
             //Print size of the sets
             System.out.println("HashSet size: "+hash.size());
             System.out.println("TreeSet size: "+tree.size());
