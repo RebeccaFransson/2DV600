@@ -63,7 +63,7 @@ public class HashWordSet implements WordSet {
     //Code from lecture
     @Override
     public String toString(){
-        /**Writes out in array-like way [ 'word' 'word' 'word']*/
+        /**Writes out in array-like way  with the iterator [ 'word' 'word' 'word']*/
         String ret = "[";
         Iterator<Word> itr = iterator();
         while (itr.hasNext()) {
