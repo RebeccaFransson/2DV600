@@ -19,7 +19,6 @@ public class MyNode<E> extends Node<E>{
         super(item);
     }
 
-/*
     @Override
     public E item() {
         return super.item();
@@ -29,7 +28,7 @@ public class MyNode<E> extends Node<E>{
     public String toString() {
         return super.toString();
     }
-*/
+
 
     //Checks if the node in the the successor-set
     @Override

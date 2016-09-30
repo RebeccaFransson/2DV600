@@ -27,6 +27,7 @@ public class MyGraph<E> implements DirectedGraph<E>{
         //Create new node if not in the Map
         if(node == null){
             node = new MyNode<E>(item);
+            //Adds the node to both heads and tails set because it does'nt have eny edges yet
             heads.add(node);
             tails.add(node);
             graph.put(item, node);
@@ -41,12 +42,26 @@ public class MyGraph<E> implements DirectedGraph<E>{
 
     @Override
     public boolean addEdgeFor(E from, E to) {
-        return false;
+        if(from == null || to == null)
+            throw new RuntimeException("Input for new edge was null");
+
+        MyNode<E> src = (MyNode<E>) addNodeFor(from);
+        MyNode<E> target = (MyNode<E>) addNodeFor(to);
+        if (src.hasSucc(target))//Edge is already added
+            return false;
+        else{
+            src.addSucc(target);
+            target.addPred(src);
+            //Now that the nodes have a edges, remove of from the heads and tails set
+            tails.remove(src);
+            heads.remove(target);
+        }
+        return true;
     }
 
     @Override
     public boolean containsNodeFor(E item) {
-        return false;
+        return graph.containsKey(item);
     }
 
     @Override
@@ -56,7 +71,7 @@ public class MyGraph<E> implements DirectedGraph<E>{
 
     @Override
     public Iterator<Node<E>> iterator() {
-        return null;
+        return graph.values().iterator();
     }
 
     @Override
@@ -81,12 +96,17 @@ public class MyGraph<E> implements DirectedGraph<E>{
 
     @Override
     public List<E> allItems() {
-        return null;
+        return  new ArrayList<>(graph.keySet());
     }
 
     @Override
     public int edgeCount() {
-        return 0;
+        //Foreach node count outgoing edges
+        int count = 0;
+        for (Node<E> node : graph.values()) {
+            count += node.outDegree();
+        }
+        return count;
     }
 
     @Override
@@ -96,7 +116,16 @@ public class MyGraph<E> implements DirectedGraph<E>{
 
     @Override
     public boolean containsEdgeFor(E from, E to) {
-        return false;
+        if(from == null || to == null)
+            throw new RuntimeException("Input for new edge was null");
+
+        MyNode<E> src = (MyNode<E>) getNodeFor(from);
+        MyNode<E> target = (MyNode<E>) getNodeFor(to);
+
+        if(src == null || target == null)
+            return false;
+
+        return src.hasSucc(target) && target.hasPred(src);
     }
 
     @Override

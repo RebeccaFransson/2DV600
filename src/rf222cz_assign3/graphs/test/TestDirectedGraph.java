@@ -63,20 +63,20 @@ public class TestDirectedGraph  {
 		assertSame(n2,n3);
 		assertEquals(3,g.nodeCount());
 		assertEquals(0,g.edgeCount());
-		/*
+
 		// Add connecting edges
 		assertTrue(g.addEdgeFor(i[0],i[1]));
 		assertTrue(g.addEdgeFor(i[0],i[2]));
 		assertTrue(g.addEdgeFor(i[1],i[2]));
 		assertEquals(3,g.nodeCount());
 		assertEquals(3,g.edgeCount());
-		
+
 		// Add node creating edges
 		g.addEdgeFor(i[1],i[3]);
 		g.addEdgeFor(i[2],i[3]);
 		assertEquals(4,g.nodeCount());
 		assertEquals(5,g.edgeCount());
-		
+
 		// Add singleton node
 		Node<Integer> n4 = g.addNodeFor(i[4]);
 		assertSame(n4,g.getNodeFor(i[4]));
@@ -85,7 +85,7 @@ public class TestDirectedGraph  {
 		
 		assertEquals(2,g.headCount());
 		assertEquals(2,g.tailCount());
-		
+
 		// Add duplicated entities
 		assertSame(n2,g.addNodeFor(i[2]));
 		assertSame(n4,g.addNodeFor(i[4]));
@@ -95,7 +95,7 @@ public class TestDirectedGraph  {
 		assertEquals(5,g.edgeCount());
 		
 		System.out.println(g);
-		
+
 		// Test contains
 		assertTrue(g.containsNodeFor(i[1]));
 		assertTrue(g.containsNodeFor(i[4]));
@@ -105,13 +105,13 @@ public class TestDirectedGraph  {
 		assertFalse(g.containsEdgeFor(i[1],i[4]));
 		assertFalse(g.containsEdgeFor(i[4],i[5]));
 		assertFalse(g.containsEdgeFor(i[6],i[5]));
-		
+
 		// Verify contains doesn't change graph
 		assertEquals(5,g.nodeCount());
 		assertFalse(g.containsNodeFor(i[5]));
 		assertFalse(g.containsNodeFor(i[6]));
 		assertFalse(g.containsEdgeFor(i[6],i[5]));
-		
+
 		// Consistency tests
 		DirectedGraph<Integer> dg = generator.getSmallCyclic();
 		check_graph(dg);
@@ -121,10 +121,10 @@ public class TestDirectedGraph  {
 		
 		dg = generator.getRandom(100,0.1);
 		check_graph(dg);
-		*/
+
 	}
 	
-	/*@Test
+	@Test
 	public void testRemove() {
 		DirectedGraph<Integer> cyclic = generator.getSmallCyclic();
 		Integer[] i = generator.getUsedItems();
@@ -166,7 +166,7 @@ public class TestDirectedGraph  {
 		dg = generator.getRandom(100,0.1);
 		check_remove(dg);
 	}
-*/
+
 	@Test
 	public void testExceptions() {
 		DirectedGraph<Integer> dg = generator.getSmallCyclic();
