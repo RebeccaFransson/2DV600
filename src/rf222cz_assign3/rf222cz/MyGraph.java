@@ -21,6 +21,9 @@ public class MyGraph<E> implements DirectedGraph<E>{
     }
     @Override
     public Node<E> addNodeFor(E item) {
+        if(item == null)
+            throw new NullPointerException("Input for new node was null, in addNodeFor");
+
         //Check if the graph contains the item
         Node<E> node = graph.get(item);
 
@@ -43,7 +46,7 @@ public class MyGraph<E> implements DirectedGraph<E>{
     @Override
     public boolean addEdgeFor(E from, E to) {
         if(from == null || to == null)
-            throw new RuntimeException("Input for new edge was null");
+            throw new NullPointerException("Input for new edge was null, in addEdgeFor");
 
         MyNode<E> src = (MyNode<E>) addNodeFor(from);
         MyNode<E> target = (MyNode<E>) addNodeFor(to);
@@ -61,6 +64,9 @@ public class MyGraph<E> implements DirectedGraph<E>{
 
     @Override
     public boolean containsNodeFor(E item) {
+        if(item == null)
+            throw new NullPointerException("Input for contains node was null, in containsNodeFor");
+
         return graph.containsKey(item);
     }
 
@@ -96,7 +102,7 @@ public class MyGraph<E> implements DirectedGraph<E>{
 
     @Override
     public List<E> allItems() {
-        return  new ArrayList<>(graph.keySet());
+        return new ArrayList<>(graph.keySet());
     }
 
     @Override
@@ -111,17 +117,45 @@ public class MyGraph<E> implements DirectedGraph<E>{
 
     @Override
     public void removeNodeFor(E item) {
+        MyNode<E> removeNode = (MyNode<E>) graph.get(item);
 
+        if(!containsNodeFor(item))
+            throw new NullPointerException("Node does not exist in graph, in removeNodeFor");
+
+        //Removes the item from the graph list
+        graph.remove(item);
+
+        //Remove the edges associated with item
+        for (Iterator<Node<E>> iterator = removeNode.predsOf(); iterator.hasNext();){
+            MyNode<E> nextNode = (MyNode<E>) iterator.next();
+            nextNode.removePred(removeNode);
+            if (nextNode.isHead())
+                heads.add(nextNode);
+            iterator.remove();
+        }
+        for (Iterator<Node<E>> iterator = removeNode.succsOf(); iterator.hasNext();){
+            MyNode<E> nextNode = (MyNode<E>) iterator.next();
+            nextNode.removeSucc(removeNode);
+            if (nextNode.isTail())
+                tails.add(nextNode);
+            iterator.remove();
+        }
+
+        tails.remove(removeNode);
+        heads.remove(removeNode);
+        graph.remove(item);
+        removeNode.disconnect();
     }
 
     @Override
     public boolean containsEdgeFor(E from, E to) {
         if(from == null || to == null)
-            throw new RuntimeException("Input for new edge was null");
+            throw new NullPointerException("Input for contains edge was null, in containsEdgeFor");
 
         MyNode<E> src = (MyNode<E>) getNodeFor(from);
         MyNode<E> target = (MyNode<E>) getNodeFor(to);
 
+        //Check if there is nodes for the input
         if(src == null || target == null)
             return false;
 
@@ -130,6 +164,17 @@ public class MyGraph<E> implements DirectedGraph<E>{
 
     @Override
     public boolean removeEdgeFor(E from, E to) {
+        if(from == null || to == null)
+            throw new NullPointerException("Input for remove edge was null, in removeEdgeFor");
+
+        MyNode<E> src = (MyNode<E>) getNodeFor(from);
+        MyNode<E> target = (MyNode<E>) getNodeFor(to);
+
+        if(src == null || target == null)
+            return false;
+
+        
+
         return false;
     }
 }
