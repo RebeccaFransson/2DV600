@@ -349,7 +349,6 @@ public class TestDirectedGraph  {
 	public void testGML() throws Exception {
 		DirectedGraph<Integer> cyclic = generator.getSmallCyclic();
 		GML<Integer> gml = new MyGML<Integer>(cyclic);
-		System.out.println(gml.toGML());
 
 		gml.dumpGML();
 	}

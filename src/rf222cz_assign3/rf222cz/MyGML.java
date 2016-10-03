@@ -19,29 +19,29 @@ public class MyGML<E> extends GML<E> {
     @Override
     public String toGML() {
         StringBuilder string = new StringBuilder();
-        string.append("Graph [ \n"+
-                        "\tHeads: "+graph.headCount()+
-                        "\n\tTails: "+graph.tailCount()+"\n\t");
+        string.append("graph [");
+                        //"\tHeads: "+graph.headCount()+
+                        //"\n\tTails: "+graph.tailCount()+"\n");
         for (Iterator<Node<E>> iterator = graph.iterator(); iterator.hasNext();){
             MyNode<E> node = (MyNode<E>) iterator.next();
-            string.append("node [\n \t\tItem: "+node.item()+
-                            "\n \t\tOutDegree: "+node.outDegree()+
-                            "\n \t\tInDegree: "+node.inDegree()+
-                            "\n \t\tIsTail: "+node.isTail()+
-                            "\n \t\tIsHead: "+node.isHead()+
-                            "\n \t\tHasReflexiveEdges: "+node.hasReflexiveEdges());
+            string.append("\n\tnode [\n \t\tid "+node.item()+
+                            "\n \t\tlabel \"node nr "+node.item()+"\"\n\t]");
+                            //"'\n \t\tOutDegree: "+node.outDegree()+
+                            //"\n \t\tInDegree: "+node.inDegree()+
+                            //"\n \t\tIsTail: "+node.isTail()+
+                            //"\n \t\tIsHead: "+node.isHead()+
+                            //"\n \t\tHasReflexiveEdges: "+node.hasReflexiveEdges());
+        }
 
-            string.append("\n \t\tSuccessor [");
-            for (Iterator<Node<E>> itS = node.succsOf(); itS.hasNext();){
-                MyNode<E> succ = (MyNode<E>) itS.next();
-                string.append("\n\t\t\tItem: "+succ.item());
+        for (Node<E> node : graph){
+            for (Iterator<Node<E>> itS = node.succsOf(); itS.hasNext(); ) {
+                MyNode<E> next = (MyNode<E>) itS.next();
+                string.append("\n\tedge [");
+                string.append("\n\t\tsource " + node +
+                        "\n\t\ttarget " + next+
+                        "\n\t\tlabel \"node "+ node+"\"");
+                string.append("\n\t]");
             }
-            string.append("]Predecessors [");
-            for (Iterator<Node<E>> itP = node.predsOf(); itP.hasNext();){
-                MyNode<E> pred = (MyNode<E>) itP.next();
-                string.append("\n\t\t\tItem: "+pred.item());
-            }
-            string.append("\n\t]");
         }
 
         return string.toString();
