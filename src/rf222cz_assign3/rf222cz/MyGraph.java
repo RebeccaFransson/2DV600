@@ -19,6 +19,7 @@ public class MyGraph<E> implements DirectedGraph<E>{
         heads = new HashSet<>();
         tails = new HashSet<>();
     }
+
     @Override
     public Node<E> addNodeFor(E item) {
         if(item == null)
@@ -80,6 +81,8 @@ public class MyGraph<E> implements DirectedGraph<E>{
         return graph.size();
     }
 
+    //Choose not to do a own implementation of a iterator
+    //If you want to see a iterator that i have done you can look at my previous assignments
     @Override
     public Iterator<Node<E>> iterator() {
         return graph.values().iterator();
@@ -158,8 +161,8 @@ public class MyGraph<E> implements DirectedGraph<E>{
         if(from == null || to == null)
             throw new NullPointerException("Input for contains edge was null, in containsEdgeFor");
 
-        MyNode<E> src = (MyNode<E>) getNodeFor(from);
-        MyNode<E> target = (MyNode<E>) getNodeFor(to);
+        MyNode<E> src = (MyNode<E>) graph.get(from);
+        MyNode<E> target = (MyNode<E>) graph.get(to);
 
         //Check if there is nodes for the input
         if(src == null || target == null)

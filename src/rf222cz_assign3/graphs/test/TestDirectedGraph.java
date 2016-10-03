@@ -223,7 +223,7 @@ public class TestDirectedGraph  {
 		try { dg.getNodeFor(err); }
 		catch(Exception e) {b =true;}
 		assertTrue(b);
-	
+
 		b = false;
 		try { dg.removeNodeFor(err); }
 		catch(Exception e) {b =true;}
@@ -279,7 +279,7 @@ public class TestDirectedGraph  {
 		String[] s = {"A","B","C","D","E","F","G","H"};
 		DirectedGraph<String> g = new MyGraph<String>();
 		
-		/* Add nodes */
+		// Add nodes
 		g.addNodeFor(s[0]);
 		g.addNodeFor(s[1]);
 		Node<String> n2 = g.addNodeFor(s[2]);
@@ -287,40 +287,40 @@ public class TestDirectedGraph  {
 		assertSame(n2,n3);
 		assertEquals(3,g.nodeCount());
 		assertEquals(0,g.edgeCount());
-		
-		/* Add connecting edges */
+
+		// Add connecting edges
 		assertTrue(g.addEdgeFor(s[0],s[1]));
 		assertTrue(g.addEdgeFor(s[0],s[2]));
 		assertTrue(g.addEdgeFor(s[1],s[2]));
 		assertEquals(3,g.nodeCount());
 		assertEquals(3,g.edgeCount());
-		
-		/* Add node creating edges */
+
+		// Add node creating edges
 		g.addEdgeFor(s[1],s[3]);
 		g.addEdgeFor(s[2],s[3]);
 		assertEquals(4,g.nodeCount());
 		assertEquals(5,g.edgeCount());
-		
-		/* Add singleton node */
+
+		// Add singleton node
 		Node<String> n4 = g.addNodeFor(s[4]);
 		assertSame(n4,g.getNodeFor(s[4]));
 		assertEquals(5,g.nodeCount());
 		assertEquals(5,g.edgeCount());
-		
+
 		assertEquals(2,g.headCount());
 		assertEquals(2,g.tailCount());
-		
-		/* Add duplicated entities */
+
+		// Add duplicated entities
 		assertSame(n2,g.addNodeFor(s[2]));
 		assertSame(n4,g.addNodeFor(s[4]));
 		assertFalse(g.addEdgeFor(s[1],s[3]));
 		assertFalse(g.addEdgeFor(s[2],s[3]));
 		assertEquals(5,g.nodeCount());
 		assertEquals(5,g.edgeCount());
-		
+
 		System.out.println(g);
 		
-		/* Test contains */
+		// Test contains
 		assertTrue(g.containsNodeFor(s[1]));
 		assertTrue(g.containsNodeFor(s[4]));
 		assertTrue(g.containsEdgeFor(s[1],s[3]));
@@ -329,7 +329,7 @@ public class TestDirectedGraph  {
 		assertFalse(g.containsEdgeFor(s[1],s[4]));
 		assertFalse(g.containsEdgeFor(s[4],s[5]));
 		assertFalse(g.containsEdgeFor(s[6],s[5]));
-		
+
 		Iterator<Node<String>> it = g.iterator();
 		int count = 0;
 		while (it.hasNext()) {
@@ -342,7 +342,7 @@ public class TestDirectedGraph  {
 			System.out.print(n.item()+" ");
 		}
 		System.out.println(); // break line
-		
+
 	}
 	
 	@Test

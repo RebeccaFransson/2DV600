@@ -41,6 +41,8 @@ public class MyNode<E> extends Node<E>{
         return succs.size();
     }
 
+    //Choose not to do a own implementation of a iterator
+    //If you want to see a iterator that i have done you can look at my previous assignment
     @Override
     public Iterator<Node<E>> succsOf() {
         return succs.iterator();
@@ -56,6 +58,8 @@ public class MyNode<E> extends Node<E>{
         return preds.size();
     }
 
+    //Choose not to do a own implementation of a iterator
+    //If you want to see a iterator that i have done you can look at my previous assignment
     @Override
     public Iterator<Node<E>> predsOf() {
         return preds.iterator();
