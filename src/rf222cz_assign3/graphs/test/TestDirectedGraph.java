@@ -165,7 +165,7 @@ public class TestDirectedGraph  {
 		
 		dg = generator.getRandom(100,0.1);
 		check_remove(dg);
-		
+
 	}
 
 	@Test
@@ -173,27 +173,27 @@ public class TestDirectedGraph  {
 		DirectedGraph<Integer> dg = generator.getSmallCyclic();
 		Integer err = new Integer(-1);	
 		
-		/* Test null item exceptions */
+		// Test null item exceptions
 		boolean b = false;
 		try { dg.addNodeFor(null); }
 		catch(Exception e) {b =true;}
 		assertTrue(b);
-	
+
 		b = false;
 		try { dg.getNodeFor(null); }
 		catch(Exception e) {b =true;}
 		assertTrue(b);
-		
+
 		b = false;
 		try { dg.removeNodeFor(null); }
 		catch(Exception e) {b =true;}
 		assertTrue(b);
-		
+
 		b = false;
 		try { dg.containsNodeFor(null); }
 		catch(Exception e) {b =true;}
 		assertTrue(b);
-		
+
 		b = false;
 		try { dg.addEdgeFor(null,err); }
 		catch(Exception e) {
@@ -201,7 +201,7 @@ public class TestDirectedGraph  {
 			assertFalse(dg.containsNodeFor(err));
 		}
 		assertTrue(b);
-		
+
 		b = false;
 		try { dg.containsEdgeFor(err,null); }
 		catch(Exception e) {
@@ -209,7 +209,7 @@ public class TestDirectedGraph  {
 			assertFalse(dg.containsNodeFor(err));
 		}
 		assertTrue(b);
-		
+
 		b = false;
 		try { dg.removeEdgeFor(err,null); }
 		catch(Exception e) {
@@ -217,19 +217,19 @@ public class TestDirectedGraph  {
 			assertFalse(dg.containsNodeFor(err));
 		}
 		assertTrue(b);
-		
-		/* Test non-existing exceptions */	
+
+		// Test non-existing exceptions
 		b = false;
 		try { dg.getNodeFor(err); }
 		catch(Exception e) {b =true;}
 		assertTrue(b);
-		
+	
 		b = false;
 		try { dg.removeNodeFor(err); }
 		catch(Exception e) {b =true;}
 		assertTrue(b);
-		
-		
+
+
 	}
 	
 	@Test

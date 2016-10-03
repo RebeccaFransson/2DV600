@@ -40,7 +40,12 @@ public class MyGraph<E> implements DirectedGraph<E>{
 
     @Override
     public Node<E> getNodeFor(E item) {
-        return graph.get(item);
+        if (item == null)
+            throw new NullPointerException("Input for get node was null, in getNodeFor");
+        Node<E> node = graph.get(item);
+        if (node == null)
+            throw new NullPointerException("Node does not exist, in getNodeFor");
+        return node;
     }
 
     @Override
