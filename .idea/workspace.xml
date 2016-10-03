@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ee9f38d-734b-44b5-a284-5a043e1df84b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign3/rf222cz/MyGraph.class" afterPath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign3/rf222cz/MyGraph.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rf222cz_assign3/graphs/test/TestDirectedGraph.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign3/graphs/test/TestDirectedGraph.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyGraph.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyGraph.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyNode.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyNode.java" />
     </list>
     <ignored path="2DV600.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,18 +30,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestDirectedGraph.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestDirectedGraph.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/graphs/test/TestDirectedGraph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="122" column="8" selection-start-line="122" selection-start-column="8" selection-end-line="122" selection-end-column="8" />
+            <state relative-caret-position="428">
+              <caret line="167" column="8" selection-start-line="167" selection-start-column="8" selection-end-line="167" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#testExceptions#0;class#TestDirectedGraph#0" expanded="false" />
-                <element signature="e#9491#9506#0" expanded="true" />
-                <element signature="e#9548#9557#0" expanded="true" />
-                <element signature="e#9609#9624#0" expanded="true" />
-                <element signature="e#9676#9691#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -50,27 +46,40 @@
       <file leaf-file-name="MyNode.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9">
-              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="316">
+              <caret line="98" column="13" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#563#564#0" expanded="true" />
+                <element signature="e#602#603#0" expanded="true" />
+                <element signature="e#798#799#0" expanded="true" />
                 <element signature="e#833#834#0" expanded="true" />
+                <element signature="e#889#890#0" expanded="true" />
+                <element signature="e#928#929#0" expanded="true" />
+                <element signature="e#1072#1073#0" expanded="true" />
+                <element signature="e#1107#1108#0" expanded="true" />
+                <element signature="e#1163#1164#0" expanded="true" />
+                <element signature="e#1202#1203#0" expanded="true" />
+                <element signature="e#1451#1452#0" expanded="true" />
+                <element signature="e#1488#1489#0" expanded="true" />
+                <element signature="e#1533#1534#0" expanded="true" />
+                <element signature="e#1570#1571#0" expanded="true" />
+                <element signature="e#1720#1721#0" expanded="true" />
+                <element signature="e#1754#1755#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyGraph.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MyGraph.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyGraph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="175" column="8" selection-start-line="175" selection-start-column="8" selection-end-line="175" selection-end-column="8" />
+            <state relative-caret-position="43">
+              <caret line="139" column="30" selection-start-line="139" selection-start-column="30" selection-end-line="139" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2168#2169#0" expanded="true" />
-                <element signature="e#2216#2217#0" expanded="true" />
-                <element signature="e#2607#2608#0" expanded="true" />
-                <element signature="e#2661#2662#0" expanded="true" />
+                <element signature="e#2076#2077#0" expanded="true" />
+                <element signature="e#2111#2112#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -80,7 +89,7 @@
         <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/graphs/Node.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="196">
-              <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+              <caret line="125" column="29" selection-start-line="125" selection-start-column="29" selection-end-line="125" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -168,8 +177,8 @@
         <option value="$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyConnectedComponents.java" />
         <option value="$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyGML.java" />
         <option value="$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyNode.java" />
-        <option value="$PROJECT_DIR$/src/rf222cz_assign3/graphs/test/TestDirectedGraph.java" />
         <option value="$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyGraph.java" />
+        <option value="$PROJECT_DIR$/src/rf222cz_assign3/graphs/test/TestDirectedGraph.java" />
       </list>
     </option>
   </component>
@@ -806,34 +815,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestDirectedGraph_testCreateAdd - 2016.09.30 at 15h 54m 25s.xml">
-      <configuration name="TestDirectedGraph.testCreateAdd" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestDirectedGraph_testCreateAdd - 2016.09.30 at 15h 58m 32s.xml">
-      <configuration name="TestDirectedGraph.testCreateAdd" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestDirectedGraph_testCreateAdd - 2016.09.30 at 16h 00m 31s.xml">
-      <configuration name="TestDirectedGraph.testCreateAdd" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestDirectedGraph_testCreateAdd - 2016.09.30 at 16h 01m 09s.xml">
-      <configuration name="TestDirectedGraph.testCreateAdd" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestDirectedGraph_testCreateAdd - 2016.09.30 at 16h 01m 59s.xml">
-      <configuration name="TestDirectedGraph.testCreateAdd" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestDirectedGraph_testCreateAdd - 2016.09.30 at 16h 03m 33s.xml">
-      <configuration name="TestDirectedGraph.testCreateAdd" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestDirectedGraph_testCreateAdd - 2016.09.30 at 16h 03m 43s.xml">
-      <configuration name="TestDirectedGraph.testCreateAdd" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestDirectedGraph_testCreateAdd - 2016.09.30 at 16h 04m 09s.xml">
-      <configuration name="TestDirectedGraph.testCreateAdd" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestDirectedGraph_testRemove - 2016.09.30 at 16h 04m 14s.xml">
+    <history-entry file="TestDirectedGraph_testRemove - 2016.10.03 at 13h 18m 22s.xml">
       <configuration name="TestDirectedGraph.testRemove" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDirectedGraph_testRemove - 2016.09.30 at 16h 36m 48s.xml">
+    <history-entry file="TestDirectedGraph_testRemove - 2016.10.03 at 13h 18m 36s.xml">
+      <configuration name="TestDirectedGraph.testRemove" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDirectedGraph_testRemove - 2016.10.03 at 13h 19m 19s.xml">
+      <configuration name="TestDirectedGraph.testRemove" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDirectedGraph_testRemove - 2016.10.03 at 13h 22m 11s.xml">
+      <configuration name="TestDirectedGraph.testRemove" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDirectedGraph_testRemove - 2016.10.03 at 13h 35m 20s.xml">
+      <configuration name="TestDirectedGraph.testRemove" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDirectedGraph_testRemove - 2016.10.03 at 13h 36m 07s.xml">
+      <configuration name="TestDirectedGraph.testRemove" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDirectedGraph_testRemove - 2016.10.03 at 13h 36m 19s.xml">
+      <configuration name="TestDirectedGraph.testRemove" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDirectedGraph_testRemove - 2016.10.03 at 13h 36m 28s.xml">
+      <configuration name="TestDirectedGraph.testRemove" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDirectedGraph_testRemove - 2016.10.03 at 13h 36m 41s.xml">
+      <configuration name="TestDirectedGraph.testRemove" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDirectedGraph_testRemove - 2016.10.03 at 13h 36m 52s.xml">
       <configuration name="TestDirectedGraph.testRemove" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -848,7 +857,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -889,7 +898,7 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="66" />
+      <option name="time" value="68" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -942,27 +951,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/graphs/rf222cz/MyGraph.java" />
     <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/graphs/rf222cz/MyNode.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.881/DirectedGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.842/GraphGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.386/TestDirectedGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.881/DirectedGraph.java" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.842/GraphGenerator.java" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.386/TestDirectedGraph.java" />
     <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise5_CountWords/TreeWordSet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1156">
@@ -1040,11 +1031,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#426#427#0" expanded="false" />
-            <element signature="e#453#454#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1069,13 +1055,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#341#342#0" expanded="false" />
-            <element signature="e#368#369#0" expanded="false" />
-            <element signature="e#438#439#0" expanded="false" />
-            <element signature="e#465#466#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1093,11 +1072,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#410#411#0" expanded="false" />
-            <element signature="e#437#438#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1127,7 +1101,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
           <caret line="149" column="5" selection-start-line="118" selection-start-column="4" selection-end-line="149" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1142,27 +1115,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/Assert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="226" column="0" selection-start-line="226" selection-start-column="0" selection-end-line="226" selection-end-column="0" />
-          <folding>
-            <element signature="e#629#630#0" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
-            <element signature="e#753#754#0" expanded="true" />
-            <element signature="e#800#801#0" expanded="true" />
-            <element signature="e#857#858#0" expanded="true" />
-            <element signature="e#909#910#0" expanded="true" />
-            <element signature="e#8253#8254#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/statements/RunBefores.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1170,7 +1126,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1178,7 +1133,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1186,10 +1140,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <element signature="e#982#1175#0" expanded="true" />
-            <element signature="e#1174#1175#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1197,7 +1147,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1205,7 +1154,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1213,7 +1161,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1221,7 +1168,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
           <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1229,14 +1175,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="226" column="43" selection-start-line="226" selection-start-column="43" selection-end-line="226" selection-end-column="43" />
-          <folding>
-            <element signature="e#2137#2138#0" expanded="true" />
-            <element signature="e#2181#2182#0" expanded="true" />
-            <element signature="e#5891#6026#0" expanded="true" />
-            <element signature="e#6025#6026#0" expanded="true" />
-            <element signature="e#6429#6593#0" expanded="true" />
-            <element signature="e#6592#6593#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1244,7 +1182,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1252,7 +1189,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1260,10 +1196,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding>
-            <element signature="e#4643#4644#0" expanded="true" />
-            <element signature="e#4707#4708#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1271,7 +1203,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="153" column="0" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1279,15 +1210,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/graphs/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1301,42 +1223,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/graphs/test/TestDirectedGraph.java">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="122" column="8" selection-start-line="122" selection-start-column="8" selection-end-line="122" selection-end-column="8" />
+        <state relative-caret-position="272">
+          <caret line="230" column="0" selection-start-line="230" selection-start-column="0" selection-end-line="230" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#testExceptions#0;class#TestDirectedGraph#0" expanded="false" />
-            <element signature="e#9491#9506#0" expanded="true" />
-            <element signature="e#9548#9557#0" expanded="true" />
-            <element signature="e#9609#9624#0" expanded="true" />
-            <element signature="e#9676#9691#0" expanded="true" />
+            <element signature="e#8253#8254#0" expanded="true" />
+            <element signature="e#8313#8314#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/graphs/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="125" column="29" selection-start-line="125" selection-start-column="29" selection-end-line="125" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state relative-caret-position="316">
+          <caret line="98" column="13" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#563#564#0" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
+            <element signature="e#798#799#0" expanded="true" />
             <element signature="e#833#834#0" expanded="true" />
+            <element signature="e#889#890#0" expanded="true" />
+            <element signature="e#928#929#0" expanded="true" />
+            <element signature="e#1072#1073#0" expanded="true" />
+            <element signature="e#1107#1108#0" expanded="true" />
+            <element signature="e#1163#1164#0" expanded="true" />
+            <element signature="e#1202#1203#0" expanded="true" />
+            <element signature="e#1451#1452#0" expanded="true" />
+            <element signature="e#1488#1489#0" expanded="true" />
+            <element signature="e#1533#1534#0" expanded="true" />
+            <element signature="e#1570#1571#0" expanded="true" />
+            <element signature="e#1720#1721#0" expanded="true" />
+            <element signature="e#1754#1755#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyGraph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="175" column="8" selection-start-line="175" selection-start-column="8" selection-end-line="175" selection-end-column="8" />
+        <state relative-caret-position="43">
+          <caret line="139" column="30" selection-start-line="139" selection-start-column="30" selection-end-line="139" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2168#2169#0" expanded="true" />
-            <element signature="e#2216#2217#0" expanded="true" />
-            <element signature="e#2607#2608#0" expanded="true" />
-            <element signature="e#2661#2662#0" expanded="true" />
+            <element signature="e#2076#2077#0" expanded="true" />
+            <element signature="e#2111#2112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/graphs/test/TestDirectedGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="167" column="8" selection-start-line="167" selection-start-column="8" selection-end-line="167" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#testExceptions#0;class#TestDirectedGraph#0" expanded="false" />
           </folding>
         </state>
       </provider>

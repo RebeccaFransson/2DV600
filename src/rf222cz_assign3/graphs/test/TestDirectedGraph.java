@@ -130,13 +130,13 @@ public class TestDirectedGraph  {
 		Integer[] i = generator.getUsedItems();
 		assertEquals(7,cyclic.nodeCount());
 		assertEquals(10,cyclic.edgeCount());
-		
+
 		Node<Integer> src = cyclic.getNodeFor(i[3]);
 		Node<Integer> tgt = cyclic.getNodeFor(i[1]);
 		assertTrue(cyclic.removeEdgeFor(src.item(),tgt.item()));
 		assertEquals(7,cyclic.nodeCount());
 		assertEquals(9,cyclic.edgeCount());
-		
+
 		cyclic.removeNodeFor(i[5]);
 		assertEquals(6,cyclic.nodeCount());
 		assertEquals(7,cyclic.edgeCount());
@@ -144,27 +144,28 @@ public class TestDirectedGraph  {
 		cyclic.removeNodeFor(i[6]);
 		assertEquals(5,cyclic.nodeCount());
 		assertEquals(6,cyclic.edgeCount());
-		
+
 		cyclic.removeNodeFor(i[0]);
 		assertEquals(4,cyclic.nodeCount());
 		assertEquals(4,cyclic.edgeCount());
-		
+
 		// Remove non-existing items
 		cyclic.removeEdgeFor(i[1],i[5]);
 		cyclic.removeEdgeFor(i[1],i[9]);
 		cyclic.removeEdgeFor(i[10],i[9]);
 		assertEquals(4,cyclic.nodeCount());
 		assertEquals(4,cyclic.edgeCount());
-		
+
 		// Consistency tests
 		DirectedGraph<Integer> dg = generator.getSmallCyclic();
 		check_remove(dg);
-		
+
 		dg = generator.getComplete(10);
 		check_remove(dg);
 		
 		dg = generator.getRandom(100,0.1);
 		check_remove(dg);
+		
 	}
 
 	@Test

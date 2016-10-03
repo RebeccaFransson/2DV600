@@ -98,6 +98,8 @@ public class MyNode<E> extends Node<E>{
 
     @Override
     protected void removePred(Node<E> pred) {
+        //if(preds.size() == 1)
+        //    preds.clear();
         preds.remove(pred);
     }
 

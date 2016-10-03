@@ -122,29 +122,30 @@ public class MyGraph<E> implements DirectedGraph<E>{
         if(!containsNodeFor(item))
             throw new NullPointerException("Node does not exist in graph, in removeNodeFor");
 
-        //Removes the item from the graph list
-        graph.remove(item);
-
         //Remove the edges associated with item
-        for (Iterator<Node<E>> iterator = removeNode.predsOf(); iterator.hasNext();){
-            MyNode<E> nextNode = (MyNode<E>) iterator.next();
-            nextNode.removePred(removeNode);
-            if (nextNode.isHead())
-                heads.add(nextNode);
-            iterator.remove();
-        }
         for (Iterator<Node<E>> iterator = removeNode.succsOf(); iterator.hasNext();){
             MyNode<E> nextNode = (MyNode<E>) iterator.next();
-            nextNode.removeSucc(removeNode);
+            nextNode.removePred(removeNode);
+
             if (nextNode.isTail())
                 tails.add(nextNode);
             iterator.remove();
         }
+        for (Iterator<Node<E>> iterator = removeNode.predsOf(); iterator.hasNext();){
+            MyNode<E> nextNode = (MyNode<E>) iterator.next();
+            nextNode.removeSucc(removeNode);
 
-        tails.remove(removeNode);
-        heads.remove(removeNode);
-        graph.remove(item);
+            if (nextNode.isHead())
+                heads.add(nextNode);
+            iterator.remove();
+        }
+
         removeNode.disconnect();
+        if (removeNode.isHead()) heads.remove(removeNode);
+        if (removeNode.isTail()) tails.remove(removeNode);
+
+        //Removes the item from the graph list
+        graph.remove(item);
     }
 
     @Override
@@ -171,10 +172,18 @@ public class MyGraph<E> implements DirectedGraph<E>{
         MyNode<E> target = (MyNode<E>) getNodeFor(to);
 
         if(src == null || target == null)
-            return false;
+            return false;//No node for src or target
 
-        
+        if(src.hasSucc(target) && target.hasPred(src)){
+            src.removeSucc(target);
+            target.removePred(src);
 
+            //Look if the nodes done have any pred och succs - then make them head or tail
+            if(src.isTail()) tails.add(src);
+            if(target.isHead()) heads.add(target);
+
+            return true;
+        }
         return false;
     }
 }
