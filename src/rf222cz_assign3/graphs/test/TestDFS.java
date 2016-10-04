@@ -134,11 +134,11 @@ public class TestDFS  {
 		
     	/* Test cyclic part with root1 */
     	List<Node<Integer>> list = bfs.bfs(dg,root1);
-    	assertEquals(list.size(),7);
+    	assertEquals(7, list.size());
     	int start = list.get(0).num;
     	for (int j=0;j<list.size();j++) {
     		Node<Integer> node =  list.get(j);
-    		assertEquals(j+start,node.num);
+			assertEquals(j+start,node.num);
     	}
     	assertSame(list.get(0),root1);
     	assertSame(list.get(3),dg.getNodeFor(i[3]));

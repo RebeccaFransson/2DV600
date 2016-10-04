@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ee9f38d-734b-44b5-a284-5a043e1df84b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign3/rf222cz/MyGML.class" afterPath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign3/rf222cz/MyGML.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign3/rf222cz/MyDFS.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directed_graph_[1].gml" afterPath="$PROJECT_DIR$/directed_graph_[1].gml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rf222cz_assign3/graphs/test/TestDFS.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign3/graphs/test/TestDFS.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyBFS.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyBFS.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyDFS.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyDFS.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyGML.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyGML.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyGraph.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyGraph.java" />
     </list>
     <ignored path="2DV600.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,7 +31,7 @@
     <favorites_list name="2DV600" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.53338116">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="MyGraph.java" pinned="false" current-in-tab="false">
@@ -53,14 +52,12 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Assert.class" pinned="false" current-in-tab="false">
-            <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/Assert.class">
+          <file leaf-file-name="MyBFS.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyBFS.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="226" column="0" selection-start-line="226" selection-start-column="0" selection-end-line="226" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#8253#8254#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="247">
+                  <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -68,8 +65,8 @@
           <file leaf-file-name="MyDFS.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyDFS.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="152">
-                  <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+                <state relative-caret-position="374">
+                  <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
                   <folding />
                 </state>
               </provider>
@@ -78,9 +75,11 @@
           <file leaf-file-name="MyNode.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyNode.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="196">
+                <state relative-caret-position="451">
                   <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
                   <folding>
+                    <element signature="e#563#564#0" expanded="true" />
+                    <element signature="e#602#603#0" expanded="true" />
                     <element signature="e#1078#1079#0" expanded="true" />
                   </folding>
                 </state>
@@ -90,11 +89,9 @@
           <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/graphs/Node.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1751">
-                  <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#2895#2896#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="554">
+                  <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -106,8 +103,8 @@
           <file leaf-file-name="DFS.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/graphs/DFS.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+                <state relative-caret-position="34">
+                  <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
                   <folding />
                 </state>
               </provider>
@@ -116,11 +113,21 @@
           <file leaf-file-name="TestDFS.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/graphs/test/TestDFS.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="543">
-                  <caret line="129" column="16" selection-start-line="129" selection-start-column="16" selection-end-line="129" selection-end-column="16" />
+                <state relative-caret-position="1473">
+                  <caret line="139" column="46" selection-start-line="139" selection-start-column="46" selection-end-line="139" selection-end-column="46" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="BFS.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/graphs/BFS.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="223">
+                  <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -188,16 +195,16 @@
         <option value="$PROJECT_DIR$/src/rf222cz_assign3/graphs/test/GeneratorMain.java" />
         <option value="$PROJECT_DIR$/src/rf222cz_assign3/graphs/test/GraphGenerator.java" />
         <option value="$PROJECT_DIR$/src/rf222cz_assign3/graphs/test/TestAlgorithms.java" />
-        <option value="$PROJECT_DIR$/src/rf222cz_assign3/graphs/test/TestDFS.java" />
         <option value="$PROJECT_DIR$/src/rf222cz_assign3/graphs/benchmark/GraphBenchmark.java" />
         <option value="$PROJECT_DIR$/src/rf222cz_assign3/graphs/benchmark/BenchmarkMain.java" />
         <option value="$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyTransitiveClosure.java" />
-        <option value="$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyBFS.java" />
         <option value="$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyConnectedComponents.java" />
         <option value="$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyNode.java" />
         <option value="$PROJECT_DIR$/src/rf222cz_assign3/graphs/test/TestDirectedGraph.java" />
         <option value="$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyGML.java" />
         <option value="$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyGraph.java" />
+        <option value="$PROJECT_DIR$/src/rf222cz_assign3/graphs/test/TestDFS.java" />
+        <option value="$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyBFS.java" />
         <option value="$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyDFS.java" />
       </list>
     </option>
@@ -415,32 +422,6 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunManager" selected="JUnit.TestDFS.testDFS">
-    <configuration default="false" name="TestDirectedGraph.testWithStrings" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="rf222cz_assign3.graphs.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="2DV600" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="rf222cz_assign3.graphs.test" />
-      <option name="MAIN_CLASS_NAME" value="rf222cz_assign3.graphs.test.TestDirectedGraph" />
-      <option name="METHOD_NAME" value="testWithStrings" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="false" name="TestDirectedGraph.testGML" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -526,6 +507,32 @@
       <option name="PACKAGE_NAME" value="rf222cz_assign3.graphs.test" />
       <option name="MAIN_CLASS_NAME" value="rf222cz_assign3.graphs.test.TestDFS" />
       <option name="METHOD_NAME" value="testDFS" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestDFS.testBFS" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="rf222cz_assign3.graphs.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="2DV600" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="rf222cz_assign3.graphs.test" />
+      <option name="MAIN_CLASS_NAME" value="rf222cz_assign3.graphs.test.TestDFS" />
+      <option name="METHOD_NAME" value="testBFS" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -811,19 +818,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.WordTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TestDirectedGraph.testWithStrings" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TestDirectedGraph.testGML" />
-      <item index="3" class="java.lang.String" itemvalue="Application.TestDirectedGraph" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestDirectedGraph.testRemove" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.TestDFS.testDFS" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestDirectedGraph.testGML" />
+      <item index="2" class="java.lang.String" itemvalue="Application.TestDirectedGraph" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestDirectedGraph.testRemove" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestDFS.testDFS" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.TestDFS.testBFS" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.TestDFS.testDFS" />
-        <item index="1" class="java.lang.String" itemvalue="Application.TestDirectedGraph" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TestDirectedGraph.testRemove" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TestDirectedGraph.testGML" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TestDirectedGraph.testWithStrings" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestDFS.testBFS" />
+        <item index="2" class="java.lang.String" itemvalue="Application.TestDirectedGraph" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestDirectedGraph.testRemove" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestDirectedGraph.testGML" />
       </list>
     </recent_temporary>
   </component>
@@ -841,35 +848,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestDFS_testDFS - 2016.10.04 at 14h 21m 28s.xml">
-      <configuration name="TestDFS.testDFS" configurationId="JUnit" />
+    <history-entry file="TestDFS_testBFS - 2016.10.04 at 17h 11m 20s.xml">
+      <configuration name="TestDFS.testBFS" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDFS_testDFS - 2016.10.04 at 15h 28m 29s.xml">
-      <configuration name="TestDFS.testDFS" configurationId="JUnit" />
+    <history-entry file="TestDFS_testBFS - 2016.10.04 at 17h 14m 41s.xml">
+      <configuration name="TestDFS.testBFS" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDFS_testDFS - 2016.10.04 at 15h 28m 46s.xml">
-      <configuration name="TestDFS.testDFS" configurationId="JUnit" />
+    <history-entry file="TestDFS_testBFS - 2016.10.04 at 17h 15m 45s.xml">
+      <configuration name="TestDFS.testBFS" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDFS_testDFS - 2016.10.04 at 15h 29m 50s.xml">
-      <configuration name="TestDFS.testDFS" configurationId="JUnit" />
+    <history-entry file="TestDFS_testBFS - 2016.10.04 at 17h 15m 50s.xml">
+      <configuration name="TestDFS.testBFS" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDFS_testDFS - 2016.10.04 at 15h 37m 06s.xml">
-      <configuration name="TestDFS.testDFS" configurationId="JUnit" />
+    <history-entry file="TestDFS_testBFS - 2016.10.04 at 17h 16m 03s.xml">
+      <configuration name="TestDFS.testBFS" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDFS_testDFS - 2016.10.04 at 15h 42m 54s.xml">
-      <configuration name="TestDFS.testDFS" configurationId="JUnit" />
+    <history-entry file="TestDFS_testBFS - 2016.10.04 at 17h 26m 03s.xml">
+      <configuration name="TestDFS.testBFS" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDFS_testDFS - 2016.10.04 at 15h 44m 05s.xml">
-      <configuration name="TestDFS.testDFS" configurationId="JUnit" />
+    <history-entry file="TestDFS_testBFS - 2016.10.04 at 17h 29m 47s.xml">
+      <configuration name="TestDFS.testBFS" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDFS_testDFS - 2016.10.04 at 15h 44m 09s.xml">
-      <configuration name="TestDFS.testDFS" configurationId="JUnit" />
+    <history-entry file="TestDFS_testBFS - 2016.10.04 at 17h 29m 52s.xml">
+      <configuration name="TestDFS.testBFS" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDFS_testDFS - 2016.10.04 at 15h 45m 43s.xml">
-      <configuration name="TestDFS.testDFS" configurationId="JUnit" />
+    <history-entry file="TestDFS_testBFS - 2016.10.04 at 17h 30m 01s.xml">
+      <configuration name="TestDFS.testBFS" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDirectedGraph_testRemove - 2016.10.04 at 14h 16m 20s.xml">
-      <configuration name="TestDirectedGraph.testRemove" configurationId="JUnit" />
+    <history-entry file="TestDFS_testDFS - 2016.10.04 at 17h 31m 48s.xml">
+      <configuration name="TestDFS.testDFS" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -930,7 +937,7 @@
           <option name="timeStamp" value="76" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="87" />
+      <option name="time" value="106" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -993,13 +1000,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/graphs/BFS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/graphs/ConnectedComponents.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1050,13 +1050,6 @@
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyBFS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1172,30 +1165,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/statements/RunAfters.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/graphs/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1751">
-          <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-          <folding>
-            <element signature="e#2895#2896#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/graphs/GML.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="639">
@@ -1221,14 +1190,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/graphs/DFS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/directed_graph_[1].gml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="833">
@@ -1237,23 +1198,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyNode.java">
+    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyGML.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding>
-            <element signature="e#1078#1079#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="475">
+          <caret line="42" column="39" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/graphs/DFS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/graphs/BFS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/graphs/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="226" column="0" selection-start-line="226" selection-start-column="0" selection-end-line="226" selection-end-column="0" />
+        <state relative-caret-position="238">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding>
             <element signature="e#8253#8254#0" expanded="true" />
+            <element signature="e#8313#8314#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/statements/RunAfters.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1273,28 +1273,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyGML.java">
+    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="42" column="39" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
-          <folding />
+        <state relative-caret-position="451">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <element signature="e#563#564#0" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
+            <element signature="e#1078#1079#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/graphs/test/TestDFS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="129" column="16" selection-start-line="129" selection-start-column="16" selection-end-line="129" selection-end-column="16" />
+        <state relative-caret-position="1473">
+          <caret line="139" column="46" selection-start-line="139" selection-start-column="46" selection-end-line="139" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyBFS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyDFS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+        <state relative-caret-position="374">
+          <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
           <folding />
         </state>
       </provider>
