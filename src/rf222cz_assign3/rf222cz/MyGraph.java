@@ -176,8 +176,8 @@ public class MyGraph<E> implements DirectedGraph<E>{
         if(from == null || to == null)
             throw new NullPointerException("Input for remove edge was null, in removeEdgeFor");
 
-        MyNode<E> src = (MyNode<E>) getNodeFor(from);
-        MyNode<E> target = (MyNode<E>) getNodeFor(to);
+        MyNode<E> src = (MyNode<E>) graph.get(from);
+        MyNode<E> target = (MyNode<E>) graph.get(to);
 
         if(src == null || target == null)
             return false;//No node for src or target

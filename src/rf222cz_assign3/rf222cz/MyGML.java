@@ -19,18 +19,18 @@ public class MyGML<E> extends GML<E> {
     @Override
     public String toGML() {
         StringBuilder string = new StringBuilder();
-        string.append("graph [");
-                        //"\tHeads: "+graph.headCount()+
-                        //"\n\tTails: "+graph.tailCount()+"\n");
+        string.append("graph ["+
+                        "\n\tHeads: "+graph.headCount()+
+                        "\n\tTails: "+graph.tailCount());
         for (Iterator<Node<E>> iterator = graph.iterator(); iterator.hasNext();){
             MyNode<E> node = (MyNode<E>) iterator.next();
             string.append("\n\tnode [\n \t\tid "+node.item()+
-                            "\n \t\tlabel \"node nr "+node.item()+"\"\n\t]");
-                            //"'\n \t\tOutDegree: "+node.outDegree()+
-                            //"\n \t\tInDegree: "+node.inDegree()+
-                            //"\n \t\tIsTail: "+node.isTail()+
-                            //"\n \t\tIsHead: "+node.isHead()+
-                            //"\n \t\tHasReflexiveEdges: "+node.hasReflexiveEdges());
+                            "\n\t\tlabel \"node nr "+node.item()+
+                            "\"\n\t\tOutDegree: \""+node.outDegree()+
+                            "\"\n\t\tInDegree: \""+node.inDegree()+
+                            "\"\n\t\tIsTail: \""+node.isTail()+
+                            "\"\n\t\tIsHead: \""+node.isHead()+
+                            "\"\n\t\tHasReflexiveEdges: \""+node.hasReflexiveEdges()+"\"\n\t]");
         }
 
         for (Node<E> node : graph){
@@ -39,7 +39,7 @@ public class MyGML<E> extends GML<E> {
                 string.append("\n\tedge [");
                 string.append("\n\t\tsource " + node +
                         "\n\t\ttarget " + next+
-                        "\n\t\tlabel \"node "+ node+"\"");
+                        "\n\t\tlabel \"edge "+ node+"\"");
                 string.append("\n\t]");
             }
         }
