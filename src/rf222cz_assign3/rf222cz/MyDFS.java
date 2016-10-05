@@ -100,6 +100,7 @@ public class MyDFS<E> implements DFS<E> {
 
 
 
+    //POostOrder with star node
     @Override
     public List<Node<E>> postOrder(DirectedGraph<E> g, Node<E> root) {
         reset();
@@ -107,6 +108,7 @@ public class MyDFS<E> implements DFS<E> {
         return collection;
     }
 
+    //Postorder over the whole graph
     @Override
     public List<Node<E>> postOrder(DirectedGraph<E> g) {
         reset();
@@ -125,11 +127,32 @@ public class MyDFS<E> implements DFS<E> {
 
     @Override
     public boolean isCyclic(DirectedGraph<E> graph) {
+        //Check all edges if their nodes has edge to the first node
+        //Graph contains backward edges ⇒ graph is cyclic
+        //for (Iterator<Node<E>> itG= graph.iterator(); itG.hasNext();){
+        for (Node node : postOrder(graph)){
+            //Node<E> node = itG.next();
+            for (Iterator<Node<E>> itN = node.succsOf(); itN.hasNext();){
+                Node<E> succ = itN.next();
+                //if(succ.hasSucc(node)) return true; //Checks if the edge between two nodes go back an forth
+                //both work, try yourself
+                if (node.num <= succ.num) return true; //Checks for backwards edges
+            }
+        }
         return false;
     }
 
     @Override
     public List<Node<E>> topSort(DirectedGraph<E> graph) {
-        return null;
+        if (isCyclic(graph)) return null;
+        /*List<Node<E>> invertedList = postOrder(graph);
+        return Collections.reverse(invertedList);*/
+
+        List<Node<E>> myList = postOrder(graph);
+        List<Node<E>> invertedList = new ArrayList();
+        for (int i = myList.size() - 1; i >= 0; i--) {
+            invertedList.add(myList.get(i));
+        }
+        return invertedList;
     }
 }
