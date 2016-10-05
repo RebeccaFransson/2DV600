@@ -200,7 +200,7 @@ public class TestDFS  {
     	int start = list.get(0).num;
     	for (int j=0;j<list.size();j++) {
     		Node<Integer> node =  list.get(j);
-    		assertEquals(j+start,node.num);
+			assertEquals(j+start,node.num);
     	}
     	assertSame(list.get(6),root1);
     	assertTrue(list.get(5)==dg.getNodeFor(i[1]) || list.get(5)==dg.getNodeFor(i[2]));

@@ -11,47 +11,49 @@ import java.util.*;
  */
 public class MyDFS<E> implements DFS<E> {
 
-    //private Set<Node<E>> visited = new HashSet<Node<E>>(); //For the recursive solution
-    private List<Node<E>> visited = new ArrayList();
+    private Set<Node<E>> visited = new HashSet<Node<E>>(); //For the recursive solution
+    //private List<Node<E>> visited = new ArrayList();
     private List<Node<E>> collection = new ArrayList();
-    private int depthFirstNumber = 0;
+    private int counterNumber = 0;
 
 
     /**Puts the visited node in visited
      * and the visited nodes successors in collection**/
     private void dfs(Node node){
-
-
+        /**Non recursive
+         * This one is easier to udnerstand, but a bit slower and much more code
+         * Change return in dfs to visited instead of collection
+         * and change visited to a arrayList above
+         * Its only dfs that is non-recursive, not hte other methods in the class**/
         //17ms
-        collection.add(0, node);
+        /*collection.add(0, node);
         while (!collection.isEmpty()) {
             Node<E> current = collection.remove(0);
             //Check if the node is already visited, if not add it and give it a num
             if(!visited.contains(current)){
-                current.num = depthFirstNumber++;
+                current.num = counterNumber++;
                 visited.add(current);
             }
             //Check for successors
             for (Iterator<Node<E>> iterator = current.succsOf(); iterator.hasNext();){
                 Node<E> succ = iterator.next();
-                if(!visited.contains(succ) || collection.contains(succ))
+                if(!visited.contains(succ))
                     collection.add(0,succ);
             }
-        }
+        }*/
 
         /**Other, faster in contains-method, solution.
-         * Change return in dfs to collection instead of visited
-            and change visited to a hashset above**/
+         * **/
         //15ms
-        /*node.num = depthFirstNumber++;
+        node.num = counterNumber++;
         visited.add(node);
         collection.add(node);
-        //But the edges to collection
+        //Put the edges to collection
         for (Iterator<Node<E>> iterator = node.succsOf(); iterator.hasNext();){
             Node<E> succ = iterator.next();
             if(!visited.contains(succ))
                 dfs(succ);//calls itself again
-        }*/
+        }
 
     }
     private void reset(){
@@ -65,8 +67,8 @@ public class MyDFS<E> implements DFS<E> {
             throw new NullPointerException("The node that will be the root is not given in the depth-first search");
         reset();
         dfs(root);
-        return visited;
-        //return collection; //For the recursive solution
+        //return visited;
+        return collection; //For the recursive solution
     }
 
     @Override
@@ -77,18 +79,43 @@ public class MyDFS<E> implements DFS<E> {
         for (Node node : graph)
             if(!visited.contains(node)) dfs(node);
 
-        return visited;
-        //return collection;//For the recursive solution
+        //return visited;
+        return collection;//For the recursive solution
     }
+
+/**  ---POST ORDER----  **/
+    private void postOrder(Node node){
+
+
+        visited.add(node);//Visited is only for the fast contains with hashset
+        for (Iterator<Node<E>> iterator = node.succsOf(); iterator.hasNext();){
+            Node<E> succ = iterator.next();
+            if(!visited.contains(succ))
+                postOrder(succ);//calls itself again
+        }
+
+        node.num = counterNumber++;
+        collection.add(node);//This one will be returned.
+    }
+
+
 
     @Override
     public List<Node<E>> postOrder(DirectedGraph<E> g, Node<E> root) {
-        return null;
+        reset();
+        postOrder(root);
+        return collection;
     }
 
     @Override
     public List<Node<E>> postOrder(DirectedGraph<E> g) {
-        return null;
+        reset();
+        for (Iterator<Node<E>> iterator = g.iterator(); iterator.hasNext();){
+            Node<E> node = iterator.next();
+            if (!visited.contains(node))
+                postOrder(node);
+        }
+        return collection;
     }
 
     @Override

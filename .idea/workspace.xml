@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ee9f38d-734b-44b5-a284-5a043e1df84b" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign3/rf222cz/MyDFS.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign3/rf222cz/MyBFS.class" afterPath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign3/rf222cz/MyBFS.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign3/rf222cz/MyDFS.class" afterPath="$PROJECT_DIR$/out/production/2DV600/rf222cz_assign3/rf222cz/MyDFS.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyBFS.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyBFS.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rf222cz_assign3/graphs/test/TestDFS.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign3/graphs/test/TestDFS.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyDFS.java" afterPath="$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyDFS.java" />
     </list>
     <ignored path="2DV600.iws" />
@@ -31,7 +31,7 @@
     <favorites_list name="2DV600" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.53338116">
+    <splitter split-orientation="horizontal" split-proportion="0.5865039">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="MyGraph.java" pinned="false" current-in-tab="false">
@@ -50,21 +50,33 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="MyBFS.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="MyBFS.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyBFS.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="212">
+                <state relative-caret-position="416">
                   <caret line="46" column="88" selection-start-line="46" selection-start-column="88" selection-end-line="46" selection-end-column="88" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="MyDFS.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="MyDFS.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyDFS.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="64" column="88" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="88" />
+                <state relative-caret-position="409">
+                  <caret line="115" column="32" selection-start-line="115" selection-start-column="32" selection-end-line="115" selection-end-column="32" />
+                  <folding>
+                    <element signature="e#304#313#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Word.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise5_CountWords/Word.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="342">
+                  <caret line="49" column="4" selection-start-line="49" selection-start-column="4" selection-end-line="53" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
@@ -99,8 +111,8 @@
           <file leaf-file-name="DFS.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/graphs/DFS.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-323">
-                  <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+                <state relative-caret-position="102">
+                  <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="36" />
                   <folding />
                 </state>
               </provider>
@@ -109,12 +121,24 @@
           <file leaf-file-name="TestDFS.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/graphs/test/TestDFS.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="73">
-                  <caret line="64" column="4" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="4" />
+                <state relative-caret-position="-248">
+                  <caret line="202" column="12" selection-start-line="202" selection-start-column="12" selection-end-line="202" selection-end-column="12" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="method#testDFS#0;class#TestDFS#0" expanded="false" />
                     <element signature="method#testBFS#0;class#TestDFS#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Assert.class" pinned="false" current-in-tab="false">
+            <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/Assert.class">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="221">
+                  <caret line="226" column="0" selection-start-line="226" selection-start-column="0" selection-end-line="226" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#8253#8254#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -191,15 +215,15 @@
         <option value="$PROJECT_DIR$/src/rf222cz_assign3/graphs/test/TestDirectedGraph.java" />
         <option value="$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyGML.java" />
         <option value="$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyGraph.java" />
+        <option value="$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyBFS.java" />
         <option value="$PROJECT_DIR$/src/rf222cz_assign3/graphs/test/TestDFS.java" />
         <option value="$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyDFS.java" />
-        <option value="$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyBFS.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="3038" />
-    <option name="y" value="-282" />
+    <option name="y" value="-285" />
     <option name="width" value="1696" />
     <option name="height" value="1026" />
   </component>
@@ -836,39 +860,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestDFS_testBFS - 2016.10.05 at 11h 16m 34s.xml">
-      <configuration name="TestDFS.testBFS" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestDFS_testBFS - 2016.10.05 at 11h 16m 50s.xml">
-      <configuration name="TestDFS.testBFS" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestDFS_testDFS - 2016.10.05 at 11h 16m 03s.xml">
+    <history-entry file="TestDFS_testDFS - 2016.10.05 at 13h 54m 56s.xml">
       <configuration name="TestDFS.testDFS" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDFS_testDFS - 2016.10.05 at 11h 16m 56s.xml">
+    <history-entry file="TestDFS_testDFS - 2016.10.05 at 13h 56m 30s.xml">
       <configuration name="TestDFS.testDFS" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDFS_testDFS - 2016.10.05 at 11h 17m 54s.xml">
+    <history-entry file="TestDFS_testDFS - 2016.10.05 at 13h 58m 51s.xml">
       <configuration name="TestDFS.testDFS" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDFS_testDFS - 2016.10.05 at 11h 19m 58s.xml">
+    <history-entry file="TestDFS_testDFS - 2016.10.05 at 13h 59m 27s.xml">
       <configuration name="TestDFS.testDFS" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDFS_testDFS - 2016.10.05 at 11h 20m 35s.xml">
+    <history-entry file="TestDFS_testDFS - 2016.10.05 at 14h 00m 33s.xml">
       <configuration name="TestDFS.testDFS" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDFS_testDFS - 2016.10.05 at 11h 23m 10s.xml">
-      <configuration name="TestDFS.testDFS" configurationId="JUnit" />
+    <history-entry file="TestDFS_testPostOrder - 2016.10.05 at 14h 06m 18s.xml">
+      <configuration name="TestDFS.testPostOrder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDFS_testDFS - 2016.10.05 at 11h 23m 22s.xml">
-      <configuration name="TestDFS.testDFS" configurationId="JUnit" />
+    <history-entry file="TestDFS_testPostOrder - 2016.10.05 at 14h 08m 09s.xml">
+      <configuration name="TestDFS.testPostOrder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDFS_testPostOrder - 2016.10.05 at 11h 24m 13s.xml">
+    <history-entry file="TestDFS_testPostOrder - 2016.10.05 at 14h 08m 26s.xml">
+      <configuration name="TestDFS.testPostOrder" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDFS_testPostOrder - 2016.10.05 at 14h 09m 29s.xml">
+      <configuration name="TestDFS.testPostOrder" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDFS_testPostOrder - 2016.10.05 at 14h 16m 18s.xml">
       <configuration name="TestDFS.testPostOrder" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="3038" y="-282" width="1696" height="1026" extended-state="6" />
+    <frame x="3038" y="-285" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -884,6 +908,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17083333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -895,7 +920,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297619" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -925,7 +949,7 @@
           <option name="timeStamp" value="76" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="107" />
+      <option name="time" value="116" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -934,13 +958,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise1_Collection/ArrayIntStack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="96" selection-start-line="7" selection-start-column="96" selection-end-line="7" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise1_Collection/ArrayIntList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -978,13 +995,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1156">
           <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise5_CountWords/WordSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1204,13 +1214,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/Assert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1239,31 +1242,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise5_CountWords/WordSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign2/Exercise5_CountWords/Word.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="49" column="4" selection-start-line="49" selection-start-column="4" selection-end-line="53" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/graphs/DFS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-323">
-          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        <state relative-caret-position="102">
+          <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/graphs/test/TestDFS.java">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="64" column="4" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="4" />
+        <state relative-caret-position="221">
+          <caret line="226" column="0" selection-start-line="226" selection-start-column="0" selection-end-line="226" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#testDFS#0;class#TestDFS#0" expanded="false" />
-            <element signature="method#testBFS#0;class#TestDFS#0" expanded="false" />
+            <element signature="e#8253#8254#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyDFS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="64" column="88" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="88" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1279,9 +1288,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyBFS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
+        <state relative-caret-position="416">
           <caret line="46" column="88" selection-start-line="46" selection-start-column="88" selection-end-line="46" selection-end-column="88" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/rf222cz/MyDFS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="115" column="32" selection-start-line="115" selection-start-column="32" selection-end-line="115" selection-end-column="32" />
+          <folding>
+            <element signature="e#304#313#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rf222cz_assign3/graphs/test/TestDFS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-248">
+          <caret line="202" column="12" selection-start-line="202" selection-start-column="12" selection-end-line="202" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#testDFS#0;class#TestDFS#0" expanded="false" />
+            <element signature="method#testBFS#0;class#TestDFS#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
