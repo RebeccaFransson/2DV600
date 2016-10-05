@@ -43,14 +43,17 @@ public class MyBFS<E> implements BFS<E> {
 
     @Override
     public List<Node<E>> bfs(DirectedGraph<E> graph, Node<E> root) {
+        if (root == null)
+            throw new NullPointerException("The node that will be the root is not given in the breadth-first search");
         reset();
         dfs(root);
-        System.out.println(visited);
         return visited;
     }
 
     @Override
     public List<Node<E>> bfs(DirectedGraph<E> graph) {
+        if (graph == null)
+            throw new NullPointerException("The graph is not given in the breadth-first search");
         reset();
         for (Node node : graph)
             if(!visited.contains(node)) dfs(node);

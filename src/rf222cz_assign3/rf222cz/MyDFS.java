@@ -11,7 +11,7 @@ import java.util.*;
  */
 public class MyDFS<E> implements DFS<E> {
 
-    //private Set<Node<E>> visited = new HashSet<Node<E>>();
+    //private Set<Node<E>> visited = new HashSet<Node<E>>(); //For the recursive solution
     private List<Node<E>> visited = new ArrayList();
     private List<Node<E>> collection = new ArrayList();
     private int depthFirstNumber = 0;
@@ -20,8 +20,10 @@ public class MyDFS<E> implements DFS<E> {
     /**Puts the visited node in visited
      * and the visited nodes successors in collection**/
     private void dfs(Node node){
-        collection.add(0, node);
 
+
+        //17ms
+        collection.add(0, node);
         while (!collection.isEmpty()) {
             Node<E> current = collection.remove(0);
             //Check if the node is already visited, if not add it and give it a num
@@ -37,10 +39,12 @@ public class MyDFS<E> implements DFS<E> {
             }
         }
 
-        /**Other, faster in contains-methods, solution.
+        /**Other, faster in contains-method, solution.
          * Change return in dfs to collection instead of visited
             and change visited to a hashset above**/
-        /*visited.add(node);
+        //15ms
+        /*node.num = depthFirstNumber++;
+        visited.add(node);
         collection.add(node);
         //But the edges to collection
         for (Iterator<Node<E>> iterator = node.succsOf(); iterator.hasNext();){
@@ -57,18 +61,24 @@ public class MyDFS<E> implements DFS<E> {
 
     @Override
     public List<Node<E>> dfs(DirectedGraph<E> graph, Node<E> root) {
+        if (root == null)
+            throw new NullPointerException("The node that will be the root is not given in the depth-first search");
         reset();
         dfs(root);
         return visited;
+        //return collection; //For the recursive solution
     }
 
     @Override
     public List<Node<E>> dfs(DirectedGraph<E> graph) {
+        if (graph == null)
+            throw new NullPointerException("The graph is not given in the depth-first search");
         reset();
         for (Node node : graph)
             if(!visited.contains(node)) dfs(node);
 
         return visited;
+        //return collection;//For the recursive solution
     }
 
     @Override
