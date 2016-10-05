@@ -1,10 +1,6 @@
 package rf222cz_assign3.graphs.test;
 
-import rf222cz_assign3.graphs.ConnectedComponents;
-import rf222cz_assign3.graphs.DFS;
-import rf222cz_assign3.graphs.DirectedGraph;
-import rf222cz_assign3.graphs.Node;
-import rf222cz_assign3.graphs.TransitiveClosure;
+import rf222cz_assign3.graphs.*;
 
 import java.util.ArrayList;
 import java.util.Collection;
