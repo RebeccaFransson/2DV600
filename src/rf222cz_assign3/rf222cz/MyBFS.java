@@ -4,41 +4,43 @@ import rf222cz_assign3.graphs.BFS;
 import rf222cz_assign3.graphs.DirectedGraph;
 import rf222cz_assign3.graphs.Node;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by ymafr on 2016-09-29.
  */
 public class MyBFS<E> implements BFS<E> {
 
-    private List<Node<E>> visited = new ArrayList();
+    private Set<Node<E>> visited = new HashSet<Node<E>>();
     private List<Node<E>> collection = new ArrayList();
-    private int depthFirstNumber = 0;
+    private List<Node<E>> returnList = new ArrayList();
+    private int counterNumber = 0;
 
-    private void dfs(Node node){
+    /**None recursive solution**/
+    private void bfs_non_recursive(Node node){
+        visited.add(node);
         collection.add(node);
 
         while (!collection.isEmpty()) {
             Node<E> current = collection.remove(0);
             //Check if the node is already visited, if not add it and give it a num
-            if(!visited.contains(current)){
-                current.num = depthFirstNumber++;
-                visited.add(current);
-            }
+            current.num = counterNumber++;
+            returnList.add(current);
             //Check for successors
             for (Iterator<Node<E>> iterator = current.succsOf(); iterator.hasNext();){
                 Node<E> succ = iterator.next();
-                if(!visited.contains(succ) || collection.contains(succ))
+                if(!visited.contains(succ)){
                     collection.add(succ);
+                    visited.add(succ);
+                }
             }
         }
-
     }
+
     private void reset(){
         visited.clear();
         collection.clear();
+        returnList.clear();
     }
 
     @Override
@@ -46,8 +48,8 @@ public class MyBFS<E> implements BFS<E> {
         if (root == null)
             throw new NullPointerException("The node that will be the root is not given in the breadth-first search");
         reset();
-        dfs(root);
-        return visited;
+        bfs_non_recursive(root);
+        return returnList;
     }
 
     @Override
@@ -56,8 +58,8 @@ public class MyBFS<E> implements BFS<E> {
             throw new NullPointerException("The graph is not given in the breadth-first search");
         reset();
         for (Node node : graph)
-            if(!visited.contains(node)) dfs(node);
+            if(!visited.contains(node)) bfs_non_recursive(node);
 
-        return visited;
+        return returnList;
     }
 }

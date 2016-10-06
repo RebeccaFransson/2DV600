@@ -11,54 +11,58 @@ import java.util.*;
  */
 public class MyDFS<E> implements DFS<E> {
 
-    private Set<Node<E>> visited = new HashSet<Node<E>>(); //For the recursive solution
-    //private List<Node<E>> visited = new ArrayList();
+    private Set<Node<E>> visited = new HashSet<Node<E>>();
     private List<Node<E>> collection = new ArrayList();
+    private List<Node<E>> returnList = new ArrayList();
     private int counterNumber = 0;
 
 
     /**Puts the visited node in visited
      * and the visited nodes successors in collection**/
-    private void dfs(Node node){
+    private void dfs_non_recrusive(Node node){
         /**Non recursive
          * This one is easier to udnerstand, but a bit slower and much more code
          * Change return in dfs to visited instead of collection
          * and change visited to a arrayList above
          * Its only dfs that is non-recursive, not hte other methods in the class**/
-        //17ms
-        /*collection.add(0, node);
+        //17ms in test
+        collection.add(0, node);
+        visited.add(node);
         while (!collection.isEmpty()) {
             Node<E> current = collection.remove(0);
+            current.num = counterNumber++;
+            returnList.add(current);
             //Check if the node is already visited, if not add it and give it a num
-            if(!visited.contains(current)){
-                current.num = counterNumber++;
-                visited.add(current);
-            }
+
             //Check for successors
             for (Iterator<Node<E>> iterator = current.succsOf(); iterator.hasNext();){
                 Node<E> succ = iterator.next();
-                if(!visited.contains(succ))
-                    collection.add(0,succ);
+                if(!visited.contains(succ)) {
+                    collection.add(0, succ);
+                    visited.add(succ);
+                }
             }
-        }*/
-
-        /**Other, faster in contains-method, solution.
-         * **/
-        //15ms
+        }
+    }
+    /**Other, faster in contains-method, solution.**/
+    private void dfs_recrusive(Node node){
+        //15ms in test
         node.num = counterNumber++;
         visited.add(node);
-        collection.add(node);
+        returnList.add(node);
         //Put the edges to collection
         for (Iterator<Node<E>> iterator = node.succsOf(); iterator.hasNext();){
             Node<E> succ = iterator.next();
             if(!visited.contains(succ))
-                dfs(succ);//calls itself again
+                dfs_recrusive(succ);//calls itself again
         }
 
     }
+
     private void reset(){
         visited.clear();
         collection.clear();
+        returnList.clear();
     }
 
     @Override
@@ -66,9 +70,9 @@ public class MyDFS<E> implements DFS<E> {
         if (root == null)
             throw new NullPointerException("The node that will be the root is not given in the depth-first search");
         reset();
-        dfs(root);
-        //return visited;
-        return collection; //For the recursive solution
+        dfs_non_recrusive(root);
+        return returnList; //For the non-recursive solution
+        //return collection; //For the recursive solution
     }
 
     @Override
@@ -77,10 +81,10 @@ public class MyDFS<E> implements DFS<E> {
             throw new NullPointerException("The graph is not given in the depth-first search");
         reset();
         for (Node node : graph)
-            if(!visited.contains(node)) dfs(node);
+            if(!visited.contains(node)) dfs_non_recrusive(node);
 
-        //return visited;
-        return collection;//For the recursive solution
+        return returnList; //For the non-recursive solution
+        //return collection; //For the recursive solution
     }
 
 /**  ---POST ORDER----  **/
