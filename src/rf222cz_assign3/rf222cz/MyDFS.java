@@ -56,7 +56,6 @@ public class MyDFS<E> implements DFS<E> {
             if(!visited.contains(succ))
                 dfs_recrusive(succ);//calls itself again
         }
-
     }
 
     private void reset(){
@@ -71,8 +70,8 @@ public class MyDFS<E> implements DFS<E> {
             throw new NullPointerException("The node that will be the root is not given in the depth-first search");
         reset();
         dfs_non_recrusive(root);
+        //dfs_recrusive(root);
         return returnList; //For the non-recursive solution
-        //return collection; //For the recursive solution
     }
 
     @Override
@@ -82,22 +81,18 @@ public class MyDFS<E> implements DFS<E> {
         reset();
         for (Node node : graph)
             if(!visited.contains(node)) dfs_non_recrusive(node);
-
+            //if(!visited.contains(node)) dfs_recrusive(node);
         return returnList; //For the non-recursive solution
-        //return collection; //For the recursive solution
     }
 
 /**  ---POST ORDER----  **/
     private void postOrder(Node node){
-
-
         visited.add(node);//Visited is only for the fast contains with hashset
         for (Iterator<Node<E>> iterator = node.succsOf(); iterator.hasNext();){
             Node<E> succ = iterator.next();
             if(!visited.contains(succ))
                 postOrder(succ);//calls itself again
         }
-
         node.num = counterNumber++;
         collection.add(node);//This one will be returned.
     }
