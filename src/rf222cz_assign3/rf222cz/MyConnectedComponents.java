@@ -27,12 +27,11 @@ public class MyConnectedComponents<E> implements ConnectedComponents<E> {
         //new sets because "Caching of results is forbidden!"
         returnCollection = new HashSet<Collection<Node<E>>>();
         visited = new HashSet<Node<E>>();
-        //connections = new HashSet<Node<E>>();//One specific nodes connections
 
         for (Iterator<Node<E>> it = dg.iterator(); it.hasNext();){
             Node<E> node = it.next();
             if (!visited.contains(node)) {
-                connections = new HashSet<Node<E>>(new MyDFS().dfs(dg, node));
+                connections = new HashSet<Node<E>>(new MyDFS().dfs(dg, node));//One specific nodes connections
                 visited.addAll(connections);
             }
 
