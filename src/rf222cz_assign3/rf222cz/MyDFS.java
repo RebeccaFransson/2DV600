@@ -21,10 +21,7 @@ public class MyDFS<E> implements DFS<E> {
      * and the visited nodes successors in collection**/
     private void dfs_non_recrusive(Node node){
         /**Non recursive
-         * This one is easier to udnerstand, but a bit slower and much more code
-         * Change return in dfs to visited instead of collection
-         * and change visited to a arrayList above
-         * Its only dfs that is non-recursive, not hte other methods in the class**/
+         * This one is easier to understand, but much more code**/
         //17ms in test
         collection.add(0, node);
         visited.add(node);
@@ -44,7 +41,8 @@ public class MyDFS<E> implements DFS<E> {
             }
         }
     }
-    /**Other, faster in contains-method, solution.**/
+
+    /**Recrusive solution.**/
     private void dfs_recrusive(Node node){
         //15ms in test
         node.num = counterNumber++;
@@ -70,8 +68,8 @@ public class MyDFS<E> implements DFS<E> {
             throw new NullPointerException("The node that will be the root is not given in the depth-first search");
         reset();
         dfs_non_recrusive(root);
-        //dfs_recrusive(root);
-        return returnList; //For the non-recursive solution
+        //dfs_recrusive(root); //try the recrusive method
+        return returnList;
     }
 
     @Override
@@ -81,7 +79,7 @@ public class MyDFS<E> implements DFS<E> {
         reset();
         for (Node node : graph)
             if(!visited.contains(node)) dfs_non_recrusive(node);
-            //if(!visited.contains(node)) dfs_recrusive(node);
+            //if(!visited.contains(node)) dfs_recrusive(node); //try the recrusive method
         return returnList; //For the non-recursive solution
     }
 
@@ -94,12 +92,12 @@ public class MyDFS<E> implements DFS<E> {
                 postOrder(succ);//calls itself again
         }
         node.num = counterNumber++;
-        collection.add(node);//This one will be returned.
+        collection.add(node);
     }
 
 
 
-    //POostOrder with star node
+    //PostOrder with start node
     @Override
     public List<Node<E>> postOrder(DirectedGraph<E> g, Node<E> root) {
         reset();

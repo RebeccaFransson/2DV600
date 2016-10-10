@@ -11,55 +11,48 @@ import java.util.*;
  */
 public class MyConnectedComponents<E> implements ConnectedComponents<E> {
 
-    private Collection<Collection<Node<E>>> collection;
+    private Collection<Collection<Node<E>>> returnCollection;
     private Set<Node<E>> visited;
     private Set<Node<E>> connections;
-    private int count = 0;
 
-    private void connected(Node<E> node){
-        //kolla om node har connection med node2
-        node.num = count++;
-        visited.add(node);
-        connections.add(node);
 
-        //Reach again if not visited
-        for (Iterator<Node<E>> iterator = node.succsOf(); iterator.hasNext();){
-            Node<E> succ = iterator.next();
-            if(!connections.contains(succ))
-                connected(succ);
-        }
-
-    }
-
-    /**
-     * Create new sets
-     * for every node in graph - check if its not visited=**/
+    /** Code done from pseudo-code from lecture
+     * For every node in graph check if the node is already visited
+     * For the nodes that is not yet visited get its connections(method above)
+     * Check if the nodes connections has a node in common in every node-connection in the returnCollection
+     *      If so, merge the two collections together
+     * If the connections isn't empty add it to the returnCollection**/
     @Override
     public Collection<Collection<Node<E>>> computeComponents(DirectedGraph<E> dg) {
-        collection = new HashSet<Collection<Node<E>>>();
-        connections = new HashSet<Node<E>>();
+        //new sets because "Caching of results is forbidden!"
+        returnCollection = new HashSet<Collection<Node<E>>>();
         visited = new HashSet<Node<E>>();
+        //connections = new HashSet<Node<E>>();//One specific nodes connections
 
         for (Iterator<Node<E>> it = dg.iterator(); it.hasNext();){
             Node<E> node = it.next();
-            if (!visited.contains(node))
-                connected(node);
+            if (!visited.contains(node)) {
+                connections = new HashSet<Node<E>>(new MyDFS().dfs(dg, node));
+                visited.addAll(connections);
+            }
 
-            for (Iterator<Collection<Node<E>>> itC = collection.iterator(); itC.hasNext();){
+
+            for (Iterator<Collection<Node<E>>> itC = returnCollection.iterator(); itC.hasNext();){
                 Collection<Node<E>> nodesInColl = itC.next();
 
-                //Element incommon
+                //Element in common
                 if(!Collections.disjoint(nodesInColl, connections)){
                     nodesInColl.addAll(connections);
                     connections = new HashSet<Node<E>>();
                 }
             }
+
             if(!connections.isEmpty()){
-                collection.add(connections);
+                returnCollection.add(connections);
                 connections = new HashSet<Node<E>>();
             }
 
         }
-        return collection;
+        return returnCollection;
     }
 }
