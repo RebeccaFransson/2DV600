@@ -57,8 +57,17 @@ public class MyBFS<E> implements BFS<E> {
         if (graph == null)
             throw new NullPointerException("The graph is not given in the breadth-first search");
         reset();
-        for (Node node : graph)
-            if(!visited.contains(node)) bfs_non_recursive(node);
+        //Check if there is heads to start with
+        if (graph.headCount() != 0) {//If no heads, just take one
+            for (Iterator<Node<E>> iterator = graph.heads(); iterator.hasNext();){
+                Node<E> head = iterator.next();
+                if(!visited.contains(head)) bfs_non_recursive(head);
+                //if(!visited.contains(head)) dfs_recrusive(head); //try the recrusive method
+            }
+        }else{
+            bfs_non_recursive(graph.getNodeFor(graph.allItems().get(0)));
+            //dfs_recrusive(graph.getNodeFor(graph.allItems().get(0))); //try the recrusive method
+        }
 
         return returnList;
     }

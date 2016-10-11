@@ -13,6 +13,7 @@ public class MyDFS<E> implements DFS<E> {
 
     private Set<Node<E>> visited = new HashSet<Node<E>>();
     private List<Node<E>> collection = new ArrayList();
+    private Set<Node<E>> collectionContains = new HashSet<Node<E>>();
     private List<Node<E>> returnList = new ArrayList();
     private int counterNumber = 0;
 
@@ -22,11 +23,13 @@ public class MyDFS<E> implements DFS<E> {
     private void dfs_non_recrusive(Node node){
         /**Non recursive
          * This one is easier to understand, but much more code**/
-        //17ms in test
+
         collection.add(0, node);
+        collectionContains.add(node);
         visited.add(node);
         while (!collection.isEmpty()) {
             Node<E> current = collection.remove(0);
+            collectionContains.remove(current);
             current.num = counterNumber++;
             returnList.add(current);
             //Check if the node is already visited, if not add it and give it a num
@@ -34,8 +37,9 @@ public class MyDFS<E> implements DFS<E> {
             //Check for successors
             for (Iterator<Node<E>> iterator = current.succsOf(); iterator.hasNext();){
                 Node<E> succ = iterator.next();
-                if(!visited.contains(succ)) {
+                if(!visited.contains(succ) && !collectionContains.contains(succ)) {
                     collection.add(0, succ);
+                    collectionContains.add(succ);
                     visited.add(succ);
                 }
             }
@@ -60,6 +64,7 @@ public class MyDFS<E> implements DFS<E> {
         visited.clear();
         collection.clear();
         returnList.clear();
+        collectionContains.clear();
     }
 
     @Override
@@ -77,9 +82,18 @@ public class MyDFS<E> implements DFS<E> {
         if (graph == null)
             throw new NullPointerException("The graph is not given in the depth-first search");
         reset();
-        for (Node node : graph)
-            if(!visited.contains(node)) dfs_non_recrusive(node);
-            //if(!visited.contains(node)) dfs_recrusive(node); //try the recrusive method
+
+        //Check if there is heads to start with
+        if (graph.headCount() != 0) {//If no heads, just take one
+            for (Iterator<Node<E>> iterator = graph.heads(); iterator.hasNext();){
+                Node<E> head = iterator.next();
+                if(!visited.contains(head)) dfs_non_recrusive(head);
+                //if(!visited.contains(head)) dfs_recrusive(head); //try the recrusive method
+            }
+        }else{
+            dfs_non_recrusive(graph.getNodeFor(graph.allItems().get(0)));
+            //dfs_recrusive(graph.getNodeFor(graph.allItems().get(0))); //try the recrusive method
+        }
         return returnList; //For the non-recursive solution
     }
 
@@ -92,7 +106,7 @@ public class MyDFS<E> implements DFS<E> {
                 postOrder(succ);//calls itself again
         }
         node.num = counterNumber++;
-        collection.add(node);
+        returnList.add(node);
     }
 
 
@@ -102,7 +116,7 @@ public class MyDFS<E> implements DFS<E> {
     public List<Node<E>> postOrder(DirectedGraph<E> g, Node<E> root) {
         reset();
         postOrder(root);
-        return collection;
+        return returnList;
     }
 
     //Postorder over the whole graph
@@ -114,7 +128,7 @@ public class MyDFS<E> implements DFS<E> {
             if (!visited.contains(node))
                 postOrder(node);
         }
-        return collection;
+        return returnList;
     }
 
     @Override
@@ -126,7 +140,6 @@ public class MyDFS<E> implements DFS<E> {
     public boolean isCyclic(DirectedGraph<E> graph) {
         //Check all edges if their nodes has edge to the first node
         //Graph contains backward edges ⇒ graph is cyclic
-        //for (Iterator<Node<E>> itG= graph.iterator(); itG.hasNext();){
         for (Node node : postOrder(graph)){
             //Node<E> node = itG.next();
             for (Iterator<Node<E>> itN = node.succsOf(); itN.hasNext();){
@@ -142,8 +155,6 @@ public class MyDFS<E> implements DFS<E> {
     @Override
     public List<Node<E>> topSort(DirectedGraph<E> graph) {
         if (isCyclic(graph)) return null;
-        /*List<Node<E>> invertedList = postOrder(graph);
-        return Collections.reverse(invertedList);*/
 
         List<Node<E>> myList = postOrder(graph);
         List<Node<E>> invertedList = new ArrayList();
